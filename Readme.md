@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Aleksey Yakovlev](https://up.htmlacademy.ru/adaptive/26/user/2041611).
-* Наставник: `Неизвестно`.
+* Наставник: [Mikhail Savotikov](https://htmlacademy.ru/profile/id98316).
 
 ---
 
