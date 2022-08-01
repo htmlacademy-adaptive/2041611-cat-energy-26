@@ -41,67 +41,79 @@
 
     <h1 class="title">Подбор программы</h1>
 
-    <form class="form program-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="program-form" action="https://echo.htmlacademy.ru" method="post">
 
       <p class="program-form__text">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
 
       <div class="program-form__block program-form__block--cat">
         <h2 class="visually-hidden">Данные кота</h2>
         <div class="program-form__field-wrapper">
-          <label class="field-text__label" for="cat-name">Имя:*</label>
-          <input class="field-text__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-          <label class="field-text__label" for="cat-weight">Вес (кг):*</label>
-          <input class="field-text__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
-          <label class="field-text__label" for="cat-age">Возраст (лет):</label>
-          <input class="field-text__input" type="text" name="cat-age" id="cat-age" placeholder="7">
+          <label class="program-form__label" for="cat-name">Имя:*</label>
+          <input class="program-form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+        </div>
+        <div class="program-form__field-wrapper">
+          <label class="program-form__label" for="cat-weight">Вес (кг):*</label>
+          <input class="program-form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+        </div>
+        <div class="program-form__field-wrapper">
+          <label class="program-form__label" for="cat-age">Возраст (лет):</label>
+          <input class="program-form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
         </div>
       </div>
 
       <div class="program-form__block program-form__block--program">
         <h2 class="visually-hidden">Выбор программы</h2>
         <div class="program-form__field-wrapper">
-            <input class="field-radio__input" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
-            <label class="field-radio__label" for="weight-loss">Похудение</label>
-            <input class="field-radio__input" type="radio" name="program" value="weight-gain" id="weight-gain">
-            <label class="field-radio__label" for="weight-gain">Набор массы</label>
-            <input class="field-radio__input" type="radio" name="program" value="need-advice" id="need-advice">
-            <label class="field-radio__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+          <input class="program-form__input" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
+          <label class="program-form__label" for="weight-loss">Похудение</label>
+        </div>
+        <div class="program-form__field-wrapper">
+          <input class="program-form__input" type="radio" name="program" value="weight-gain" id="weight-gain">
+          <label class="program-form__label" for="weight-gain">Набор массы</label>
+        </div>
+        <div class="program-form__field-wrapper">
+          <input class="program-form__input" type="radio" name="program" value="need-advice" id="need-advice">
+          <label class="program-form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
         </div>
       </div>
 
-      <div class="program-form__field-wrapper--contacts">
+      <div class="program-form__block program-form__block--contacts">
         <h2 class="program-form__title">Контактные данные (владельца&nbsp;кота)</h2>
-        <div class="program-form__block program-form__block--contacts">
-          <div class="program-form__field-wrapper program-form__field-wrapper--email">
-            <label class="field-text__label field-text__label--email" for="owner-email">E-mail:*</label>
-            <input class="field-text__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
-          </div>
-          <div class="program-form__field-wrapper program-form__field-wrapper--phone">
-            <label class="field-text__label field-text__label--phone" for="owner-phone">Телефон:*</label>
-            <input class="field-text__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
-          </div>
+        <div class="program-form__field-wrapper program-form__field-wrapper--email">
+          <label class="program-form__label program-form__label--email" for="owner-email">E-mail:*</label>
+          <input class="program-form__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+        </div>
+        <div class="program-form__field-wrapper program-form__field-wrapper--phone">
+          <label class="program-form__label program-form__label--phone" for="owner-phone">Телефон:*</label>
+          <input class="program-form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
         </div>
       </div>
 
-      <div class="program-form__field-wrapper--comment">
+      <div class="program-form__block program-form__block--comment">
         <h2 class="program-form__title">Комментарий</h2>
-        <div class="program-form__block program-form__block--comment">
+        <div class="program-form__field-wrapper program-form__field-wrapper--textarea">
           <label class="visually-hidden" for="owner-comment">Введите комментарий</label>
           <textarea class="program-form__textarea" name="owner-comment" id="owner-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
 
-      <div class="program-form__field-wrapper--extra">
+      <div class="program-form__block program-form__block--extra">
         <h2 class="program-form__title">Дополнительно</h2>
-        <div class="program-form__block program-form__block--extra">
-          <label class="field-checkbox__label" for="sweetener">Сахарозаменитель</label>
-          <input class="field-checkbox__input" type="checkbox" name="extra-order" value="sweetener" id="sweetener" checked>
-          <label class="field-checkbox__label" for="drinking-water">Питьевая вода</label>
-          <input class="field-checkbox__input" type="checkbox" name="extra-order" value="drinking-water" id="drinking-water">
-          <label class="field-checkbox__label" for="milk">Молоко</label>
-          <input class="field-checkbox__input" type="checkbox" name="extra-order" value="milk" id="milk">
-          <label class="field-checkbox__label" for="vitamins">Витамины</label>
-          <input class="field-checkbox__input" type="checkbox" name="extra-order" value="vitamins" id="vitamins">
+        <div class="program-form__field-wrapper">
+          <label class="program-form__label" for="sweetener">Сахарозаменитель</label>
+          <input class="program-form__input" type="checkbox" name="extra-order" value="sweetener" id="sweetener" checked>
+        </div>
+        <div class="program-form__field-wrapper">
+          <label class="program-form__label" for="drinking-water">Питьевая вода</label>
+          <input class="program-form__input" type="checkbox" name="extra-order" value="drinking-water" id="drinking-water">
+        </div>
+        <div class="program-form__field-wrapper">
+          <label class="program-form__label" for="milk">Молоко</label>
+          <input class="program-form__input" type="checkbox" name="extra-order" value="milk" id="milk">
+        </div>
+        <div class="program-form__field-wrapper">
+          <label class="program-form__label" for="vitamins">Витамины</label>
+          <input class="program-form__input" type="checkbox" name="extra-order" value="vitamins" id="vitamins">
         </div>
       </div>
 
