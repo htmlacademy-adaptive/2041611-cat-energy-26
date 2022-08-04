@@ -1,0 +1,106 @@
+.programs__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 21px 33px 18px 20px;
+  background-color: @grey_f2;
+}
+
+.programs__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: auto;
+  left: auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  z-index: 1;
+}
+
+.programs__item--slim::before {
+  width: 35px;
+  height: 49px;
+  margin-top: 4px;
+  margin-left: 9px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-size: 100% auto;
+}
+
+.programs__item--pro::before {
+  width: 67px;
+  height: 28px;
+  margin-top: 17px;
+  margin-left: -10px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-size: 100% auto;
+}
+
+.programs__item-title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 6px 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: @black;
+
+  &::before {
+    content: "";
+    position: static;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 19px;
+    background-color: @green_68;
+    border-radius: 50%;
+  }
+}
+
+.programs__item-description {
+  width: 100%;
+  margin: 22px 0 38px;
+}
+
+.programs__item-link-block {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1em;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.programs__item-link {
+  position: relative;
+  display: inline-block;
+  padding: 4px 49px 4px 0;
+  color: @black;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 7px;
+    right: 9px;
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/icon-programs-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 11px;
+    background-position: right center;
+    transition: all 0.3s ease;
+  }
+
+  &:hover::after {
+    right: 0;
+    width: 32px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
