@@ -36,6 +36,7 @@
     bottom: 0;
     border: 1px solid @grey_ed;
   }
+}
 
 .program-form__field-wrapper {
   display: flex;
@@ -47,7 +48,7 @@
   margin-right: 15px;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald","Arial",sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: @grey_22;
 }
@@ -58,7 +59,7 @@
   padding: 13px 15px 12px;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald","Arial",sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: @grey_22;
   background-color: @white;
@@ -70,9 +71,8 @@
   }
 }
 
-  .program-form__field-wrapper + .program-form__field-wrapper {
-    margin-top: 13px;
-  }
+.program-form__field-wrapper + .program-form__field-wrapper {
+  margin-top: 13px;
 }
 
 .program-form__title {
@@ -82,7 +82,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
-  font-family: "Oswald","Arial",sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: @grey_11;
   background-color: @white;
 }
@@ -126,7 +126,6 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -151,7 +150,7 @@
   padding: 13px 15px 12px;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald","Arial",sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: @grey_22;
   background-color: @white;
@@ -168,35 +167,35 @@
 }
 
 .program-form__block--extra .program-form__label {
-    position: relative;
+  position: relative;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 46px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: @grey_22;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
     display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 46px;
-    font-size: 16px;
-    line-height: 18px;
-    font-family: "Oswald", "Arial", sans-serif;
-    text-transform: uppercase;
-    color: @grey_22;
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 6px;
-      left: 0;
-      width: 30px;
-      height: 30px;
-      padding-top: 6px;
-      padding-right: 3px;
-      padding-bottom: 6px;
-      padding-left: 4px;
-      border: 1px solid @grey_cd;
-    }
+    top: 6px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    padding-right: 3px;
+    padding-bottom: 6px;
+    padding-left: 4px;
+    border: 1px solid @grey_cd;
+  }
 }
 
 .program-form__block--extra .program-form__input {
