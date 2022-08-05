@@ -5,7 +5,6 @@
 .program-form__text {
   margin: 37px 0 39px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -53,7 +52,11 @@
   color: @grey_22;
 }
 
-.program-form__input {
+.program-form__text-input,
+.program-form__radio,
+.program-form__email,
+.program-form__tel,
+.program-form__checkbox {
   width: 100%;
   height: 45px;
   padding: 13px 15px 12px;
@@ -67,7 +70,6 @@
 
   &::placeholder {
     color: @grey_44;
-    opacity: 1;
   }
 }
 
@@ -90,9 +92,7 @@
 .program-form__block--program .program-form__label {
   position: relative;
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 46px;
+  padding: 12px 0 12px 46px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -113,16 +113,15 @@
   }
 }
 
-.program-form__block--program .program-form__input:checked ~ .program-form__label::before {
+.program-form__radio:checked ~ .program-form__label::before {
   background-color: @green_68;
   background-clip: content-box;
 }
 
-.program-form__block--program .program-form__input {
+.program-form__radio {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -131,12 +130,12 @@
   overflow: hidden;
 }
 
-.program-form__block--program .program-form__input:focus ~ .program-form__label::before,
-.program-form__block--program .program-form__input:not(:disabled) ~ .program-form__label:hover::before {
+.program-form__radio:focus ~ .program-form__label::before,
+.program-form__radio:not(:disabled) ~ .program-form__label:hover::before {
   border-color: @silver_ba;
 }
 
-.program-form__block--program .program-form__input:disabled ~ .program-form__label {
+.program-form__radio:disabled ~ .program-form__label {
   opacity: 0.3;
 }
 
@@ -158,7 +157,6 @@
 
   &::placeholder {
     color: @grey_44;
-    opacity: 1;
   }
 }
 
@@ -169,9 +167,7 @@
 .program-form__block--extra .program-form__label {
   position: relative;
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 46px;
+  padding: 12px 0 12px 46px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -190,44 +186,40 @@
     left: 0;
     width: 30px;
     height: 30px;
-    padding-top: 6px;
-    padding-right: 3px;
-    padding-bottom: 6px;
-    padding-left: 4px;
+    padding: 6px 3px 6px 4px;
     border: 1px solid @grey_cd;
   }
 }
 
-.program-form__block--extra .program-form__input {
+.program-form__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   padding: 0;
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.program-form__block--extra .program-form__input:checked ~ .program-form__label::before {
+.program-form__checkbox:checked ~ .program-form__label::before {
   background: url("/source/img/icon-tick.svg") no-repeat center;
   background-clip: content-box;
 }
 
-.program-form__block--extra .program-form__input:focus ~ .program-form__label::before,
-.program-form__block--extra .program-form__input:not(:disabled) ~ .program-form__label:hover::before {
+.program-form__checkbox:focus ~ .program-form__label::before,
+.program-form__checkbox:not(:disabled) ~ .program-form__label:hover::before {
   border-color: @silver_ba;
 }
 
-.program-form__block--extra .program-form__input:disabled ~ .program-form__label {
+.program-form__checkbox:disabled ~ .program-form__label {
   opacity: 0.3;
 }
 
-.form__submit {
+.program-form__submit {
   margin-top: 34px;
 }
 
-.form__caption {
+.program-form__caption {
   margin: 0;
   display: block;
   margin-top: 21px;

@@ -38,7 +38,7 @@
 
   </header>
 
-  <main class="main-container container">
+  <main class="page__main container">
 
     <h1 class="title">Подбор программы</h1>
 
@@ -50,30 +50,30 @@
         <h2 class="visually-hidden">Данные кота</h2>
         <div class="program-form__field-wrapper">
           <label class="program-form__label" for="cat-name">Имя:*</label>
-          <input class="program-form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+          <input class="program-form__text-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
         </div>
         <div class="program-form__field-wrapper">
           <label class="program-form__label" for="cat-weight">Вес (кг):*</label>
-          <input class="program-form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+          <input class="program-form__text-input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
         </div>
         <div class="program-form__field-wrapper">
           <label class="program-form__label" for="cat-age">Возраст (лет):</label>
-          <input class="program-form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
+          <input class="program-form__text-input" type="text" name="cat-age" id="cat-age" placeholder="7">
         </div>
       </div>
 
       <div class="program-form__block program-form__block--program">
         <h2 class="visually-hidden">Выбор программы</h2>
         <div class="program-form__field-wrapper">
-          <input class="program-form__input" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
+          <input class="program-form__radio" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
           <label class="program-form__label" for="weight-loss">Похудение</label>
         </div>
         <div class="program-form__field-wrapper">
-          <input class="program-form__input" type="radio" name="program" value="weight-gain" id="weight-gain">
+          <input class="program-form__radio" type="radio" name="program" value="weight-gain" id="weight-gain">
           <label class="program-form__label" for="weight-gain">Набор массы</label>
         </div>
         <div class="program-form__field-wrapper">
-          <input class="program-form__input" type="radio" name="program" value="need-advice" id="need-advice">
+          <input class="program-form__radio" type="radio" name="program" value="need-advice" id="need-advice">
           <label class="program-form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
         </div>
       </div>
@@ -82,11 +82,11 @@
         <h2 class="program-form__title">Контактные данные (владельца&nbsp;кота)</h2>
         <div class="program-form__field-wrapper program-form__field-wrapper--email">
           <label class="program-form__label program-form__label--email" for="owner-email">E-mail:*</label>
-          <input class="program-form__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+          <input class="program-form__email" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
         </div>
         <div class="program-form__field-wrapper program-form__field-wrapper--phone">
           <label class="program-form__label program-form__label--phone" for="owner-phone">Телефон:*</label>
-          <input class="program-form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+          <input class="program-form__tel" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
         </div>
       </div>
 
@@ -102,25 +102,25 @@
         <h2 class="program-form__title">Дополнительно</h2>
         <div class="program-form__field-wrapper">
           <label class="program-form__label" for="sweetener">Сахарозаменитель</label>
-          <input class="program-form__input" type="checkbox" name="extra-order" value="sweetener" id="sweetener" checked>
+          <input class="program-form__checkbox" type="checkbox" name="extra-order" value="sweetener" id="sweetener" checked>
         </div>
         <div class="program-form__field-wrapper">
           <label class="program-form__label" for="drinking-water">Питьевая вода</label>
-          <input class="program-form__input" type="checkbox" name="extra-order" value="drinking-water" id="drinking-water">
+          <input class="program-form__checkbox" type="checkbox" name="extra-order" value="drinking-water" id="drinking-water">
         </div>
         <div class="program-form__field-wrapper">
           <label class="program-form__label" for="milk">Молоко</label>
-          <input class="program-form__input" type="checkbox" name="extra-order" value="milk" id="milk">
+          <input class="program-form__checkbox" type="checkbox" name="extra-order" value="milk" id="milk">
         </div>
         <div class="program-form__field-wrapper">
           <label class="program-form__label" for="vitamins">Витамины</label>
-          <input class="program-form__input" type="checkbox" name="extra-order" value="vitamins" id="vitamins">
+          <input class="program-form__checkbox" type="checkbox" name="extra-order" value="vitamins" id="vitamins">
         </div>
       </div>
 
-      <div class="form__submit">
-        <button class="button form__submit-button" type="submit">Отправить заявку</button>
-        <p class="form__caption">* — Обязательные поля</p>
+      <div class="program-form__submit">
+        <button class="button program-form__submit-button" type="submit">Отправить заявку</button>
+        <p class="program-form__caption">* — Обязательные поля</p>
       </div>
     </form>
 
@@ -169,7 +169,7 @@
       <div class="main-footer__copyright-block">
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="main-footer__copyright-author">HTML Academy</span>
-          <svg class="main-footer__copyright-logo" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg"> <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"/>
+          <svg class="main-footer__copyright-icon" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg"> <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"/>
           </svg>
         </a>
       </div>
