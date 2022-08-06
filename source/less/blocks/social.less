@@ -1,0 +1,31 @@
+.social__items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 43px;
+  list-style: none;
+}
+
+.social__item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 22px;
+}
+
+.social__item-link:hover .social__item-icon,
+.social__item-link:focus .social__item-icon {
+  fill: @green_68;
+}
+
+.social__item-link:active .social__item-icon {
+  fill-opacity: 0.3;
+}
+
+.social__item-icon {
+  fill: @grey_66;
+}
