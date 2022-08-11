@@ -13,7 +13,7 @@
   text-align: center;
   color: @white;
   background-color: @green_68;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8) 175px), url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -27,6 +27,12 @@
     background: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (min-width: @tablets) {
+    width: auto;
+    margin: 0;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 }
 
@@ -42,4 +48,28 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+}
+
+@media (min-width: @tablets) and (max-width: @tablets-max) {
+  .promo {
+    min-height: 200px;
+    padding: 65px 120px 65px 90px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: left;
+
+    &::before {
+      padding-bottom: 10px;
+    }
+  }
+
+  .promo__link {
+    width: 165px;
+    margin-left: auto;
+    padding-top: 7px;
+  }
+
+  .promo__title {
+    margin-top: 0;
+  }
 }

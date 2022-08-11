@@ -1,5 +1,11 @@
 .program-form {
   padding-bottom: 32px;
+
+  @media (min-width: @tablets) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 72px;
+  }
 }
 
 .program-form__text {
@@ -10,30 +16,76 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @black;
+
+  @media (min-width: @tablets) {
+    margin: 54px 0 66px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-form__block {
   position: relative;
-  margin-top: 27px;
 
   &--cat {
-    margin-top: 0;
+    margin-bottom: 27px;
+
+    @media (min-width: @desktops) {
+      width: calc(50% - 40px);
+    }
   }
 
   &--program {
     position: relative;
-    margin-top: 23px;
+    margin-bottom: 26px;
+    padding: 10px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid @grey_ed;
+    }
+
+    @media (min-width: @tablets) {
+      margin-top: 73px;
+      padding: 25px 28px;
+    }
+
+    @media (min-width: @desktops) {
+      width: calc(50% - 40px);
+    }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid @grey_ed;
+  &--contacts {
+    margin-bottom: 24px;
+
+    @media (min-width: @tablets) {
+      margin-top: 71px;
+    }
+  }
+
+  &--comment {
+    margin-bottom: 23px;
+
+    &::before {
+      border: none;
+    }
+
+    @media (min-width: @tablets) {
+      margin-top: 66px;
+    }
+  }
+
+  &--extra {
+    @media (min-width: @tablets) {
+      margin-top: 66px;
+    }
   }
 }
 
@@ -43,6 +95,7 @@
 }
 
 .program-form__label {
+  flex-shrink: 0;
   max-width: 70%;
   margin-right: 15px;
   font-size: 16px;
@@ -73,13 +126,26 @@
   }
 }
 
+.program-form__field-wrapper--email,
+.program-form__field-wrapper--phone {
+  @media (min-width: @desktops) {
+    width: calc(50% - 40px);
+  }
+}
+
 .program-form__field-wrapper + .program-form__field-wrapper {
   margin-top: 13px;
+
+  @media (min-width: @tablets) {
+    margin-top: 20px;
+  }
 }
 
 .program-form__title {
   display: inline-block;
   margin: 0;
+  padding: 0;
+  padding-right: 20px;
   margin-bottom: 35px;
   font-size: 24px;
   font-weight: 400;
@@ -87,12 +153,25 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: @grey_11;
   background-color: @white;
+
+  @media (min-width: @tablets) {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+.program-form__title-comment {
+  display: block;
+
+  @media (min-width: @tablets) {
+    display: inline;
+  }
 }
 
 .program-form__block--program .program-form__label {
   position: relative;
   display: block;
-  padding: 12px 0 12px 46px;
+  padding: 5px 0 7px 46px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -103,7 +182,7 @@
     content: "";
     position: absolute;
     display: block;
-    top: 6px;
+    top: 0;
     left: 0;
     width: 30px;
     height: 30px;
@@ -139,10 +218,6 @@
   opacity: 0.3;
 }
 
-.program-form__block--comment::before {
-  border: none;
-}
-
 .program-form__textarea {
   width: 100%;
   height: 150px;
@@ -167,7 +242,7 @@
 .program-form__block--extra .program-form__label {
   position: relative;
   display: block;
-  padding: 12px 0 12px 46px;
+  padding: 5px 0 7px 46px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -182,7 +257,7 @@
     content: "";
     position: absolute;
     display: block;
-    top: 6px;
+    top: 0;
     left: 0;
     width: 30px;
     height: 30px;
@@ -217,6 +292,21 @@
 
 .program-form__submit {
   margin-top: 34px;
+
+  @media (min-width: @tablets) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 54px;
+  }
+}
+
+.program-form__submit-button {
+  @media (min-width: @tablets) {
+    width: calc(50% - 30px);
+    font-size: 20px;
+    padding: 16px 44px;
+  }
 }
 
 .program-form__caption {
@@ -227,4 +317,12 @@
   line-height: 16px;
   text-align: center;
   color: @black;
+
+  @media (min-width: @tablets) {
+    width: calc(50% - 30px);
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+  }
 }

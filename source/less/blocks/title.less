@@ -1,8 +1,35 @@
 .title {
   margin: 0;
+  padding: 27px 20px 0 0;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
   font-family: "Oswald", "Arial", sans-serif;
   color: @black;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100vw;
+    height: 3px;
+    margin-top: calc(1em / 2 + 3px);
+    background-color: @green_68;
+    z-index: -1;
+  }
+
+  &::before {
+    display: none;
+  }
+
+  @media (min-width: @tablets) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktops) {
+    margin-left: 220px;
+  }
 }

@@ -1,12 +1,27 @@
-
 .intro {
-  padding: 27px 20px 0;
+  padding-top: 27px;
+  margin-bottom: 20px;
   text-align: center;
   color: @white;
   background-color: @green_68;
-  background-image: linear-gradient(to top, @white 175px, transparent 175px), url("../img/index-background-mobile@1x.jpg");
+  background-image: linear-gradient(to top, @white 175px, rgba(104, 183, 56, 0.8) 175px), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center bottom 175px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablets) {
+    position: relative;
+    min-height: 840px;
+    padding-bottom: 533px;
+    color: @grey_11;
+    background: none;
+    text-align: inherit;
+  }
+
+  @media (min-width: @desktops) {
+    min-height: 583px;
+    padding-bottom: 0;
+  }
 }
 
 .intro__title {
@@ -16,6 +31,18 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablets) {
+    width: 416px;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 41px 87px;
+  }
+
+  @media (min-width: @desktops) {
+    margin: 0 0 40px 320px;
+    z-index: 1;
+  }
 }
 
 .intro__description {
@@ -26,6 +53,17 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: @tablets) {
+    margin: 0 0 49px 87px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktops) {
+    z-index: 1;
+    margin: 0 0 52px 320px;
+  }
 }
 
 .intro__img {
@@ -34,6 +72,23 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @tablets) {
+    position: absolute;
+    left: 6%;
+    bottom: 0;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktops) {
+    bottom: 22%;
+    width: 552px;
+    height: 499px;
+    left: 41%;
+    z-index: 0;
+  }
 }
 
 .intro__link {
@@ -47,4 +102,17 @@
   text-transform: uppercase;
   background-color: @green_68;
   color: @white;
+
+  @media (min-width: @tablets) {
+    width: 244px;
+    margin-left: 87px;
+    padding: 17px 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktops) {
+    width: auto;
+    margin-left: 320px;
+  }
 }

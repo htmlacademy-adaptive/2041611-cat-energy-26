@@ -1,10 +1,31 @@
+.programs {
+  margin-bottom: 20px;
+
+  @media (min-width: @tablets) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @desktops) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .programs__item {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 20px;
   padding: 21px 33px 18px 20px;
   background-color: @grey_f2;
+
+  @media (min-width: @desktops) {
+    width: calc(50% - 40px);
+    margin-top: 26px;
+    padding-top: 47px;
+    padding-right: 50px;
+    padding-bottom: 61px;
+  }
 }
 
 .programs__item::before {
@@ -25,6 +46,21 @@
   left: 29px;
   background-image: url("../img/icon-cat-slim.svg");
   background-size: 100% auto;
+
+  @media (min-width: @tablets) {
+    width: 140px;
+    height: 196px;
+    margin: 2px 92px 0 0;
+  }
+}
+
+.programs__item--slim {
+  margin-bottom: @phones-paddings;
+
+  @media (min-width: @tablets) {
+    padding: 77px 60px 62px 52px;
+    margin-bottom: @tablets-paddings;
+  }
 }
 
 .programs__item--pro::before {
@@ -57,12 +93,35 @@
     margin-right: 19px;
     background-color: @green_68;
     border-radius: 50%;
+
+    @media (min-width: @tablets) {
+      content: "";
+      display: block;
+      position: static;
+      flex-shrink: 0;
+      width: 200px;
+      height: 200px;
+      margin-top: 15px;
+      margin-left: 20px;
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: @tablets) {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 .programs__item-description {
   width: 100%;
   margin: 22px 0 38px;
+
+  @media (min-width: @tablets) {
+    margin: 26px 0 0;
+  }
 }
 
 .programs__item-link-block {
@@ -71,6 +130,12 @@
   line-height: 16px;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+
+  @media (min-width: @tablets) {
+    margin-top: 55px;
+    font-size: 20px;
+    box-shadow: none;
+  }
 }
 
 .programs__item-link {
@@ -93,6 +158,14 @@
     background-size: 32px 11px;
     background-position: right center;
     transition: all 0.3s ease;
+
+    @media (min-width: @tablets) {
+      top: 4px;
+    }
+  }
+
+  @media (min-width: @tablets) {
+    padding: 0 58px 0 0;
   }
 
   &:hover::after {

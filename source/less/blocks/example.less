@@ -1,6 +1,17 @@
 .example {
   background-color: @grey_ea;
-  padding: 25px 20px 40px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  width: 100%;
+
+  @media (min-width: @tablets) {
+    background-color: @white;
+    padding: 0;
+  }
+
+  @media (min-width: @desktops) {
+    display: flex;
+  }
 }
 
 .example__title {
@@ -11,6 +22,16 @@
   font-size: 36px;
   line-height: 40px;
   color: @black;
+
+  @media (min-width: @tablets) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: @desktops) {
+    width: 20%;
+  }
 }
 
 .example__description {
@@ -18,19 +39,52 @@
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: @tablets) {
+    font-size: inherit;
+    line-height: inherit;
+    padding-right: 6px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktops) {
+    width: 26%;
+  }
+}
+
+.example__stats {
+  @media (min-width: @tablets) {
+    display: flex;
+  }
+
+  @media (min-width: @desktops) {
+    flex-direction: column;
+    width: 25%;
+  }
 }
 
 .example__stats-items {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 61px;
+
+  @media (min-width: @tablets) {
+    width: 366px;
+  }
+
+  @media (min-width: @desktops) {
+    margin-bottom: 40px;
+  }
 }
 
 .example__stats-item {
   width: calc(50% - 16px);
   text-align: center;
-  border-radius: 3px;
+
+  @media (min-width: @tablets) {
+    width: calc(50% - 21px);
+  }
 }
 
 .example__stats-value {
@@ -43,19 +97,49 @@
   color: @black;
   border: 1px solid @grey_cd;
   border-radius: 3px;
+
+  @media (min-width: @tablets) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 18px;
+  }
 }
 
 .example__stats-description {
   display: inline-block;
-  margin: 0 25px 0 22px;
+  margin: 0 10px;
+  padding: 0 15px;
   font-size: 12px;
   line-height: 12px;
-  transform: translateY(-8px);
+  background-color: @grey_ea;
+  transform: translateY(-9px);
+
+  @media (min-width: @tablets) {
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @white;
+    transform: translateY(-12px);
+  }
 }
 
 .example__costs-block {
   text-align: center;
   margin-bottom: 40px;
+
+  @media (min-width: @tablets) {
+    margin: 0;
+    width: 342px;
+    padding-top: 11px;
+    padding-left: 42px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktops) {
+    display: flex;
+  }
 }
 
 .example__costs-description,
@@ -67,4 +151,17 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: @black;
+
+  @media (min-width: @tablets) {
+    display: block;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.example__costs-description {
+  @media (min-width: @tablets) {
+    margin-bottom: 9px;
+  }
 }
