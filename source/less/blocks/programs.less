@@ -22,9 +22,7 @@
   @media (min-width: @desktops) {
     width: calc(50% - 40px);
     margin-top: 26px;
-    padding-top: 47px;
-    padding-right: 50px;
-    padding-bottom: 61px;
+    padding: 47px 50px 61px 0;
   }
 }
 
@@ -55,11 +53,11 @@
 }
 
 .programs__item--slim {
-  margin-bottom: @phones-paddings;
+  margin-bottom: 20px;
 
   @media (min-width: @tablets) {
     padding: 77px 60px 62px 52px;
-    margin-bottom: @tablets-paddings;
+    margin-bottom: 30px;
   }
 }
 
@@ -97,7 +95,6 @@
     @media (min-width: @tablets) {
       content: "";
       display: block;
-      position: static;
       flex-shrink: 0;
       width: 200px;
       height: 200px;
@@ -157,7 +154,7 @@
     background-repeat: no-repeat;
     background-size: 32px 11px;
     background-position: right center;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 
     @media (min-width: @tablets) {
       top: 4px;

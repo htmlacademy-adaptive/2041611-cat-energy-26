@@ -14,10 +14,14 @@
 
   <header class="main-header">
 
-    <a class="main-header__logo" href="/">
-      <img class="main-header__logo-img" src="img/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy">
-      <img class="main-header__logo-img" src="img/logo-mobile-title.svg" width="101" height="18" alt="Cat Energy">
-    </a>
+    <div class="main-header__logo">
+      <a class="main-header__logo-link" href="index.html">
+        <img class="main-header__logo-img" src="img/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy">
+      </a>
+      <a class="main-header__logo-sign-link" href="index.html">
+        <img class="main-header__logo-img" src="img/logo-mobile-title.svg" width="101" height="18" alt="Cat Energy">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle main-nav__toggle" type="button">
         <span class="visually-hidden">Меню</span>
@@ -25,7 +29,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--current" href="/">Главная</a>
+            <a class="main-nav__item-link main-nav__item-link--current" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
@@ -255,47 +259,49 @@
 
       <h2 class="title extra-products__title">Дополнительные товары</h2>
 
-      <ul class="extra-products__items">
-        <li class="extra-products__item">
-          <h3 class="extra-product__title">
-            <a class="extra-product__title-link" href="#">Сахарозаменитель</a>
-          </h3>
-          <p class="extra-product__amount">1 Упаковка (100 г)</p>
-          <p class="extra-product__price">200&nbsp;p.</p>
-          <button class="button extra-product__button" type="button">Заказать</button>
-        </li>
-        <li class="extra-products__item">
-          <h3 class="extra-product__title">
-            <a class="extra-product__title-link" href="product.html">Питьевая вода</a>
-          </h3>
-          <p class="extra-product__amount">5 литров</p>
-          <p class="extra-product__price">50&nbsp;p.</p>
-          <button class="button extra-product__button" type="button">Заказать</button>
-        </li>
-        <li class="extra-products__item">
-          <h3 class="extra-product__title">
-            <a class="extra-product__title-link" href="product.html">Молоко</a>
-          </h3>
-          <p class="extra-product__amount">1 литр</p>
-          <p class="extra-product__price">100&nbsp;p.</p>
-          <button class="button extra-product__button" type="button">Заказать</button>
-        </li>
-        <li class="extra-products__item">
-          <h3 class="extra-product__title">
-            <a class="extra-product__title-link" href="product.html">Витамины</a>
-          </h3>
-          <p class="extra-product__amount">1 упаковка (30 г)</p>
-          <p class="extra-product__price">300&nbsp;p.</p>
-          <button class="button extra-product__button" type="button">Заказать</button>
-        </li>
-      </ul>
+      <div class="extra-products__layout">
+        <ul class="extra-products__items">
+          <li class="extra-products__item">
+            <h3 class="extra-product__title">
+              <a class="extra-product__title-link" href="#">Сахарозаменитель</a>
+            </h3>
+            <p class="extra-product__amount">1 Упаковка (100 г)</p>
+            <p class="extra-product__price">200&nbsp;p.</p>
+            <button class="button extra-product__button" type="button">Заказать</button>
+          </li>
+          <li class="extra-products__item">
+            <h3 class="extra-product__title">
+              <a class="extra-product__title-link" href="product.html">Питьевая вода</a>
+            </h3>
+            <p class="extra-product__amount">5 литров</p>
+            <p class="extra-product__price">50&nbsp;p.</p>
+            <button class="button extra-product__button" type="button">Заказать</button>
+          </li>
+          <li class="extra-products__item">
+            <h3 class="extra-product__title">
+              <a class="extra-product__title-link" href="product.html">Молоко</a>
+            </h3>
+            <p class="extra-product__amount">1 литр</p>
+            <p class="extra-product__price">100&nbsp;p.</p>
+            <button class="button extra-product__button" type="button">Заказать</button>
+          </li>
+          <li class="extra-products__item">
+            <h3 class="extra-product__title">
+              <a class="extra-product__title-link" href="product.html">Витамины</a>
+            </h3>
+            <p class="extra-product__amount">1 упаковка (30 г)</p>
+            <p class="extra-product__price">300&nbsp;p.</p>
+            <button class="button extra-product__button" type="button">Заказать</button>
+          </li>
+        </ul>
 
-      <div class="promo">
-        <a class="promo__link" href="#">
-          <h3 class="promo__title">Закажите все и&nbsp;получите чехол для кота в подарок!</h3>
-        </a>
-      </div>
-    </section>
+        <div class="promo">
+          <a class="promo__link" href="#">
+            <h3 class="promo__title">Закажите все и&nbsp;получите чехол для кота в подарок!</h3>
+          </a>
+        </div>
+      </section>
+    </div>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контактные данные</h2>

@@ -12,16 +12,11 @@
     content: "";
     position: absolute;
     display: block;
-    top: 0;
-    width: 100vw;
+    top: 15px;
+    width: 100%;
     height: 3px;
-    margin-top: calc(1em / 2 + 3px);
     background-color: @green_68;
     z-index: -1;
-  }
-
-  &::before {
-    display: none;
   }
 
   @media (min-width: @tablets) {
@@ -30,6 +25,6 @@
   }
 
   @media (min-width: @desktops) {
-    margin-left: 220px;
+    padding: @desktops-paddings;
   }
 }

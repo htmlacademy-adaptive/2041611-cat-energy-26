@@ -13,10 +13,14 @@
 
   <header class="main-header">
 
-    <a class="main-header__logo" href="/">
-      <img class="main-header__logo-img" src="img/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy">
-      <img class="main-header__logo-img" src="img/logo-mobile-title.svg" width="101" height="18" alt="Cat Energy">
-    </a>
+    <div class="main-header__logo">
+      <a class="main-header__logo-link" href="index.html">
+        <img class="main-header__logo-img" src="img/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy">
+      </a>
+      <a class="main-header__logo-sign-link" href="index.html">
+        <img class="main-header__logo-img" src="img/logo-mobile-title.svg" width="101" height="18" alt="Cat Energy">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Меню</span>
@@ -24,7 +28,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--current" href="/">Главная</a>
+            <a class="main-nav__item-link main-nav__item-link--current" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
@@ -100,25 +104,28 @@
 
     <section class="example">
       <h2 class="visually-hidden">Подтверждающая история</h2>
-      <h3 class="example__title">Живой пример</h3>
-      <p class="example__description">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <div class="example__stats">
-        <div class="example__stats-items">
-          <div class="example__stats-item">
-            <p class="example__stats-value">5 кг</p>
-            <p class="example__stats-description">снижение веса</p>
+
+      <div class="example__layout">
+        <h3 class="example__title">Живой пример</h3>
+        <p class="example__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example__stats">
+          <div class="example__stats-items">
+            <div class="example__stats-item">
+              <p class="example__stats-value">5 кг</p>
+              <p class="example__stats-description">снижение веса</p>
+            </div>
+            <div class="example__stats-item">
+              <p class="example__stats-value">60 дней</p>
+              <p class="example__stats-description">затрачено времени</p>
+            </div>
           </div>
-          <div class="example__stats-item">
-            <p class="example__stats-value">60 дней</p>
-            <p class="example__stats-description">затрачено времени</p>
+          <div class="example__costs-block">
+            <p class="example__costs-description">Затраты на питание:</p>
+            <p class="example__costs-value">15&nbsp;000&nbsp;руб.</p>
           </div>
-        </div>
-        <div class="example__costs-block">
-          <p class="example__costs-description">Затраты на питание:</p>
-          <p class="example__costs-value">15&nbsp;000&nbsp;руб.</p>
         </div>
       </div>
 
