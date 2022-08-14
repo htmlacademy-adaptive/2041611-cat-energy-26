@@ -1,5 +1,6 @@
 .features {
-  padding: 0 75px 49px 20px;
+  padding-top: 0;
+  padding-bottom: 49px;
 }
 
 .features__title {
@@ -10,12 +11,31 @@
   font-size: 36px;
   line-height: 40px;
   color: @black;
+
+  @media (min-width: @tablets) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .features__items {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablets) {
+    display: grid;
+    grid-template-columns: repeat(2, 248px);
+    column-gap: 137px;
+    padding-bottom: 46px;
+    border-bottom: 1px solid @grey_e6;
+  }
+
+  @media (min-width: @desktops) {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .features__item {
@@ -30,7 +50,6 @@
 
   &::before {
     content: "";
-    position: static;
     display: block;
     top: 0;
     left: 0;
