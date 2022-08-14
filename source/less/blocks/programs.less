@@ -19,6 +19,17 @@
   padding: 21px 33px 18px 20px;
   background-color: @grey_f2;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: auto;
+    left: auto;
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+  }
+
   @media (min-width: @desktops) {
     width: calc(50% - 40px);
     margin-top: 26px;
@@ -26,34 +37,24 @@
   }
 }
 
-.programs__item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: auto;
-  left: auto;
-  background-repeat: no-repeat;
-  background-position: top left;
-  z-index: 1;
-}
-
-.programs__item--slim::before {
-  width: 35px;
-  height: 49px;
-  top: 25px;
-  left: 29px;
-  background-image: url("../img/icon-cat-slim.svg");
-  background-size: 100% auto;
-
-  @media (min-width: @tablets) {
-    width: 140px;
-    height: 196px;
-    margin: 2px 92px 0 0;
-  }
-}
-
 .programs__item--slim {
   margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 49px;
+    top: 25px;
+    left: 29px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-size: 100% auto;
+
+    @media (min-width: @tablets) {
+      width: 140px;
+      height: 196px;
+      margin: 2px 92px 0 0;
+    }
+  }
 
   @media (min-width: @tablets) {
     padding: 77px 60px 62px 52px;
@@ -84,7 +85,6 @@
 
   &::before {
     content: "";
-    position: static;
     display: block;
     width: 50px;
     height: 50px;
@@ -93,15 +93,11 @@
     border-radius: 50%;
 
     @media (min-width: @tablets) {
-      content: "";
-      display: block;
       flex-shrink: 0;
       width: 200px;
       height: 200px;
       margin-top: 15px;
       margin-left: 20px;
-      background-color: #68b738;
-      border-radius: 50%;
     }
   }
 
@@ -154,7 +150,7 @@
     background-repeat: no-repeat;
     background-size: 32px 11px;
     background-position: right center;
-    transition: 0.3s ease;
+    transition: right 0.3s ease;
 
     @media (min-width: @tablets) {
       top: 4px;
