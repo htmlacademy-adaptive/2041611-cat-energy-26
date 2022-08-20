@@ -1,0 +1,50 @@
+.subtitle {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: @grey_11;
+  background-color: @white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 1000%;
+    height: 3px;
+    background-color: @green_68;
+    z-index: -1;
+  }
+
+  &::before {
+    display: none;
+
+    @media (min-width: @tablets) {
+      display: block;
+      right: 100%;
+    }
+
+    @media (min-width: @desktops) {
+      margin-right: 37px;
+    }
+  }
+
+  &::after {
+    left: 0;
+  }
+
+  @media (min-width: @tablets) {
+    padding: 0 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktops) {
+    padding: 0 35px 0 40px;
+  }
+}

@@ -1,7 +1,7 @@
 .contacts {
+  position: relative;
   display: flex;
-  padding-top: 26px;
-  padding-bottom: 6px;
+  padding: 26px 20px;
   background-color: @grey_f2;
 
   &--index {
@@ -13,8 +13,7 @@
   }
 
   @media (min-width: @tablets) {
-    justify-content: space-between;
-    padding: 64px 40px 55px;
+    padding: 56px 70px;
   }
 
   @media (min-width: @desktops) {
@@ -22,6 +21,19 @@
     padding-left: 75px;
     padding-right: 75px;
     background-color: @white;
+  }
+}
+
+.contacts__layout {
+  display: flex;
+
+  @media (min-width: @tablets) {
+    width: 628px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktops) {
+    display: none;
   }
 }
 

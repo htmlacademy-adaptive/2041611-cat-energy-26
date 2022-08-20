@@ -8,7 +8,7 @@
   min-height: 289px;
   margin-left: auto;
   margin-right: auto;
-  padding: 65px 55px 43px;
+  padding: 59px 59px 43px;
   text-decoration: none;
   text-align: center;
   color: @white;
@@ -30,10 +30,10 @@
 
   @media (min-width: @tablets) {
     width: auto;
-    margin: 0;
+    margin: 0 30px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     min-height: 200px;
-    padding: 65px 120px 65px 90px;
+    padding: 57px 120px 60px 76px;
     flex-wrap: nowrap;
     justify-content: flex-start;
     text-align: left;
@@ -44,8 +44,26 @@
   }
 
   @media (min-width: @desktops) {
-    width: 245px;
+    margin: 0;
+    margin-right: 40px;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 289px;
+    justify-content: center;
+    text-align: center;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    &::before {
+      flex-shrink: 0;
+      content: "";
+      position: static;
+      display: block;
+      width: 80px;
+      height: 82px;
+      margin: 0 auto;
+      padding-bottom: 0;
+      transform: translateY(10px);
+    }
   }
 }
 
@@ -70,5 +88,9 @@
 
   @media (min-width: @tablets) {
     margin-top: 0;
+  }
+
+  @media (min-width: @desktops) {
+    margin-top: 46px;
   }
 }

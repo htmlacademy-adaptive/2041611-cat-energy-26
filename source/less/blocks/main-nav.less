@@ -3,6 +3,12 @@
     display: flex;
     align-items: center;
   }
+
+  @media (min-width: @desktops) {
+    &--index {
+      background-color: @green_68;
+    }
+  }
 }
 
 .main-nav__items {
@@ -42,7 +48,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 20px;
   color: @black;
   text-transform: uppercase;
   text-decoration: none;
@@ -76,8 +82,109 @@
   }
 }
 
+.main-nav--index .main-nav__item-link {
+  @media (min-width: @desktops) {
+    color: @white;
+
+    &--current {
+      border-color: @white;
+    }
+  }
+}
+
 .main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  padding: 20px;
+  background-color: @white;
+  border: none;
+  overflow: hidden;
+  z-index: 2;
+  cursor: pointer;
+
+  &:hover, {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: @tablets) {
     display: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: @black;
+  box-shadow: 0 8px 0 0 @black, 0 16px 0 0 @black;
+
+  &:active {
+    background-color: fade(@black, 30%);
+    box-shadow: 0 8px 0 0 fade(@black, 30%), 0 16px 0 0 fade(@black, 30%);
+  }
+}
+
+.main-nav--closed .main-nav__wrapper {
+  @media (max-width: @phones-max) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 20px;
+    width: 24px;
+    height: 2px;
+    background-color: @black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@black, 30%);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__item-link--current {
+  padding: 22px 22px 24px 22px;
+  text-align: center;
 }

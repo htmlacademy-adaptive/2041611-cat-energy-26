@@ -1,6 +1,5 @@
 .intro {
   padding-top: 27px;
-  margin-bottom: 20px;
   text-align: center;
   color: @white;
   background-color: @green_68;
@@ -12,7 +11,7 @@
   @media (min-width: @tablets) {
     position: relative;
     min-height: 840px;
-    padding-bottom: 533px;
+    padding: 62px 0 533px 87px;
     color: @grey_11;
     background: none;
     text-align: inherit;
@@ -20,13 +19,28 @@
 
   @media (min-width: @desktops) {
     min-height: 583px;
-    padding-bottom: 0;
+    padding: 0;
+    padding-left: 80px;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   display: block;
+    //   top: -222px;
+    //   right: -110px;
+    //   bottom: 0;
+    //   width: 50%;
+    //   background-image: linear-gradient(to top, @white 0, rgba(104, 183, 56, 0.8) 0), url("../img/index-background-desktop@1x.jpg");
+    //   background-size: 100%;
+    //   background-repeat: no-repeat;
+    //   background-position: right bottom;
+    // }
   }
 }
 
 .intro__title {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -36,12 +50,11 @@
     width: 416px;
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 41px 87px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: @desktops) {
-    margin-left: 0;
-    z-index: 1;
+    padding-top: 70px;
   }
 }
 
@@ -55,15 +68,13 @@
   text-transform: uppercase;
 
   @media (min-width: @tablets) {
-    margin: 0 0 49px 87px;
+    margin-bottom: 46px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: @desktops) {
-    z-index: 1;
-    margin-left: 0;
-    margin-bottom: 52px;
+    margin-bottom: 49px;
   }
 }
 
@@ -84,10 +95,10 @@
   }
 
   @media (min-width: @desktops) {
-    bottom: 22%;
+    bottom: 96px;
     width: 552px;
     height: 499px;
-    left: 41%;
+    left: 40%;
     z-index: 0;
   }
 }
@@ -96,7 +107,7 @@
   margin-top: 3px;
   display: inline-block;
   width: 280px;
-  padding: 7px 44px;
+  padding: 11px 44px;
   font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   text-decoration: none;
@@ -106,7 +117,6 @@
 
   @media (min-width: @tablets) {
     width: 244px;
-    margin-left: 87px;
     padding: 17px 27px;
     font-size: 20px;
     line-height: 20px;
