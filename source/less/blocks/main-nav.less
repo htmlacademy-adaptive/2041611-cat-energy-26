@@ -5,9 +5,7 @@
   }
 
   @media (min-width: @desktops) {
-    &--index {
-      background-color: @green_68;
-    }
+    z-index: 2;
   }
 }
 
@@ -109,7 +107,7 @@
   z-index: 2;
   cursor: pointer;
 
-  &:hover, {
+  &:hover {
     opacity: 0.8;
   }
 
@@ -128,13 +126,11 @@
   top: 21px;
   left: 20px;
   width: 24px;
-  height: 2px;
-  background-color: @black;
-  box-shadow: 0 8px 0 0 @black, 0 16px 0 0 @black;
+  height: 18px;
+  background: url("../img/main-nav__open.svg") no-repeat;
 
   &:active {
-    background-color: fade(@black, 30%);
-    box-shadow: 0 8px 0 0 fade(@black, 30%), 0 16px 0 0 fade(@black, 30%);
+    fill: rgba(0, 0, 0, 0.7);
   }
 }
 
@@ -149,25 +145,16 @@
   &::after {
     content: "";
     position: absolute;
-    top: 29px;
-    left: 20px;
-    width: 24px;
-    height: 2px;
-    background-color: @black;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
+    top: 20px;
+    left: 22px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/main-nav__close.svg") no-repeat;
   }
 
   &:active::before,
   &:active::after {
-    background-color: fade(@black, 30%);
+    fill: rgba(0, 0, 0, 0.7);
   }
 }
 
