@@ -9,6 +9,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 82px 40px 45px;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 }
 
@@ -17,6 +19,7 @@
   flex-grow: 1;
   width: 370px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
 
@@ -73,6 +76,7 @@
 }
 
 .programs__item--slim {
+  position: relative;
   margin-bottom: 20px;
 
   &::before {
@@ -85,28 +89,33 @@
     background-size: 100% auto;
 
     @media (min-width: @tablets) {
+      position: absolute;
+      top: 77px;
+      left: 476px;
       width: 140px;
       height: 196px;
-      transform: translate(445px, 55px);
     }
 
     @media (min-width: @desktops) {
       width: 70px;
       height: 98px;
-      transform: translate(39px, 18px);
+      top: 38px;
+      left: 68px;
     }
   }
 
   &::after {
     @media (min-width: @tablets) {
       content: "";
+      position: absolute;
       display: block;
+      top: 88px;
+      right: 62px;
       flex-shrink: 0;
       width: 200px;
       height: 200px;
       background-color: @green_68;
       border-radius: 50%;
-      transform: translateY(11px);
     }
 
     @media (min-width: @desktops) {
@@ -126,6 +135,8 @@
 }
 
 .programs__item--pro {
+  position: relative;
+
   &::before {
     width: 67px;
     height: 28px;
@@ -135,20 +146,26 @@
     background-size: 100% auto;
 
     @media (min-width: @tablets) {
+      position: absolute;
+      top: 131px;
+      left: 412px;
       width: 268px;
       height: 112px;
-      transform: translate(402px, 100px);
     }
 
     @media (min-width: @desktops) {
       width: 134px;
       height: 56px;
-      transform: translate(23px, 39px);
+      top: 69px;
+      left: 33px;
     }
   }
 
   &::after {
     @media (min-width: @tablets) {
+      position: absolute;
+      top: 88px;
+      right: 60px;
       content: "";
       display: block;
       flex-shrink: 0;
@@ -156,7 +173,6 @@
       height: 200px;
       background-color: @green_68;
       border-radius: 50%;
-      transform: translate(-31px, 11px);
     }
 
     @media (min-width: @desktops) {

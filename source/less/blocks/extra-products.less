@@ -2,7 +2,7 @@
   margin-top: 25px 0 15px;
 
   @media (min-width: @tablets) {
-    padding: 0 30px 76px;
+    padding-bottom: 76px;
   }
 
   @media (min-width: @desktops) {
@@ -42,15 +42,36 @@
   }
 }
 
+.extra-products__subtitle-container {
+  position: relative;
+  width: 100%;
+
+  @media (min-width: @desktops) {
+    padding-bottom: 81px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    height: 3px;
+    background-color: @green_68;
+    z-index: -1;
+    left: 0;
+
+    @media (min-width: @tablets) {
+      top: 23px;
+    }
+  }
+}
+
+
 .extra-products__subtitle {
   margin-bottom: 15px;
 
   @media (min-width: @tablets) {
     margin-bottom: 60px;
-  }
-
-  @media (min-width: @desktops) {
-    margin-bottom: 0;
   }
 }
 

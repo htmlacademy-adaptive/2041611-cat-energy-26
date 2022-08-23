@@ -13,10 +13,11 @@
   text-align: center;
   color: @white;
   background-color: @green_68;
-  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8) 175px), url("../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 0;
 
   &::before {
     content: "";
@@ -26,6 +27,18 @@
     background: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 290px;
+    top: 0;
+    left: 0;
+    background: rgba(104, 183, 56, 0.7);
+    z-index: -1;
   }
 
   @media (min-width: @tablets) {
@@ -41,6 +54,10 @@
     &::before {
       padding-bottom: 10px;
     }
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: @desktops) {
@@ -54,20 +71,22 @@
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 
     &::before {
-      flex-shrink: 0;
       content: "";
-      position: static;
+      flex-shrink: 0;
       display: block;
+      position: absolute;
+      top: 56px;
+      left: 84px;
       width: 80px;
       height: 82px;
       margin: 0 auto;
       padding-bottom: 0;
-      transform: translateY(10px);
     }
   }
 }
 
 .promo__link {
+  display: block;
   text-decoration: none;
   color: @white;
 
@@ -91,6 +110,6 @@
   }
 
   @media (min-width: @desktops) {
-    margin-top: 46px;
+    margin-top: 143px;
   }
 }

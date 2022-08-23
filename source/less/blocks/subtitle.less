@@ -10,6 +10,8 @@
   background-color: @white;
 
   @media (min-width: @tablets) {
+    margin-left: 50%;
+    transform: translateX(-354px);
     padding: 0 37px;
     font-size: 36px;
     line-height: 36px;
@@ -17,25 +19,6 @@
 
   @media (min-width: @desktops) {
     padding: 0 40px;
-  }
-}
-
-.subtitle__container {
-  position: relative;
-  width: 100%;
-
-  @media (min-width: @desktops) {
-    padding-bottom: 81px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 23px;
-    width: 100%;
-    height: 3px;
-    background-color: @green_68;
-    z-index: -1;
-    left: 0;
+    transform: translateX(-650px);
   }
 }
