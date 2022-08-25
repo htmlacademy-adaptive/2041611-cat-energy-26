@@ -31,27 +31,15 @@
 }
 
 .catalog__item {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 17px 23px 19px;
-  border: 1px solid @grey_ed;
+  padding: 10px 0 23px;
 
   @media (min-width: @tablets) {
     width: calc(50% - 30px);
     min-height: 513px;
-    margin-top: 58px;
-    padding: 0;
-    border: 0;
-    background-color: @grey_f2;
 
     &:nth-child(1),
     &:nth-child(2) {
       margin-top: 0;
-    }
-
-    &:last-child {
-      background-image: none;
-      padding-top: 84px;
     }
   }
 
