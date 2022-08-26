@@ -1,13 +1,14 @@
 .more-products {
-  padding-top: 90px;
+  padding: 69px 3px 0 1px;
   position: relative;
+  width: 100%;
   text-align: center;
 
   &::before {
     content: "";
     position: absolute;
     display: block;
-    top: 26px;
+    top: 16px;
     left: 45%;
     width: 30px;
     height: 30px;
@@ -15,6 +16,26 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
+
+    @media (min-width: @tablets) {
+      top: 54px;
+      width: 60px;
+      height: 60px;
+      left: 131px;
+      background-image: url("../img/icon-plus.svg");
+    }
+
+    @media (min-width: @desktops) {
+      left: 90px;
+    }
+  }
+
+  @media (min-width: @tablets) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 160px 38px 40px;
+    box-shadow: 0 0 0 1px rgba(@grey_cd, 0.5);
   }
 }
 
@@ -30,17 +51,29 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: @grey_11;
+
+  @media (min-width: @tablets) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
 }
 
 .more-products__description {
   padding-top: 8px;
   font-size: 12px;
+
+  @media (min-width: @tablets) {
+    padding-top: 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .more-products__link {
   color: @grey_44;
   background-color: @grey_f2;
-  margin: 21px 0 24px;
+  margin-top: 21px;
   display: inline-block;
   width: 100%;
   padding: 10px 22px;
@@ -50,4 +83,8 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablets) {
+    margin-top: 87px;
+  }
 }

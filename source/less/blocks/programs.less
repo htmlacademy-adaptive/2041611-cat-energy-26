@@ -1,22 +1,58 @@
 .programs {
-  margin-bottom: 20px;
-
   @media (min-width: @tablets) {
-    margin-bottom: 45px;
+    padding-top: 0;
+    padding-bottom: 45px;
   }
 
   @media (min-width: @desktops) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 82px 40px 71px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+.programs__inner {
+  position: relative;
+  flex-grow: 1;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    display: block;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background-color: @green_68;
+    border-radius: 50%;
+
+    @media (min-width: @tablets) {
+      display: none;
+    }
+
+    @media (min-width: @desktops) {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-right: 62px;
+    }
   }
 }
 
 .programs__item {
   position: relative;
   display: flex;
-  flex-direction: column;
-  padding: 21px 33px 18px 20px;
+  padding: 21px 33px 0 20px;
   background-color: @grey_f2;
 
   &::before {
@@ -30,50 +66,132 @@
     z-index: 1;
   }
 
+  @media (min-width: @tablets) {
+    right: 0;
+  }
+
   @media (min-width: @desktops) {
     width: calc(50% - 40px);
-    margin-top: 26px;
-    padding: 47px 50px 61px 0;
   }
 }
 
 .programs__item--slim {
+  position: relative;
   margin-bottom: 20px;
 
   &::before {
     content: "";
     width: 35px;
     height: 49px;
-    top: 25px;
+    top: 21px;
     left: 29px;
     background-image: url("../img/icon-cat-slim.svg");
     background-size: 100% auto;
 
     @media (min-width: @tablets) {
+      position: absolute;
+      top: 77px;
+      left: 476px;
       width: 140px;
       height: 196px;
-      margin: 2px 92px 0 0;
+    }
+
+    @media (min-width: @desktops) {
+      width: 70px;
+      height: 98px;
+      top: 38px;
+      left: 68px;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablets) {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 88px;
+      right: 62px;
+      flex-shrink: 0;
+      width: 200px;
+      height: 200px;
+      background-color: @green_68;
+      border-radius: 50%;
+    }
+
+    @media (min-width: @desktops) {
+      display: none;
     }
   }
 
   @media (min-width: @tablets) {
-    padding: 77px 60px 62px 52px;
+    padding: 77px 62px 53px 52px;
     margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktops) {
+    padding: 41px 51px 44px 52px;
+    margin-bottom: 0;
   }
 }
 
-.programs__item--pro::before {
-  width: 67px;
-  height: 28px;
-  top: 39px;
-  left: 11px;
-  background-image: url("../img/icon-cat-pro.svg");
-  background-size: 100% auto;
+.programs__item--pro {
+  position: relative;
+
+  &::before {
+    width: 67px;
+    height: 28px;
+    top: 33px;
+    left: 11px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-size: 100% auto;
+
+    @media (min-width: @tablets) {
+      position: absolute;
+      top: 131px;
+      left: 412px;
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: @desktops) {
+      width: 134px;
+      height: 56px;
+      top: 69px;
+      left: 33px;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablets) {
+      position: absolute;
+      top: 88px;
+      right: 60px;
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: 200px;
+      height: 200px;
+      background-color: @green_68;
+      border-radius: 50%;
+    }
+
+    @media (min-width: @desktops) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablets) {
+    padding: 77px 28px 53px 52px;
+  }
+
+  @media (min-width: @desktops) {
+    padding: 47px 61px 44px 52px;
+  }
 }
 
 .programs__item-title {
-  display: flex;
-  align-items: center;
+  position: relative;
+  left: 68px;
   margin: 0;
   padding: 6px 0;
   font-size: 24px;
@@ -83,82 +201,75 @@
   text-transform: uppercase;
   color: @black;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin-right: 19px;
-    background-color: @green_68;
-    border-radius: 50%;
-
-    @media (min-width: @tablets) {
-      flex-shrink: 0;
-      width: 200px;
-      height: 200px;
-      margin-top: 15px;
-      margin-left: 20px;
-    }
-  }
-
   @media (min-width: @tablets) {
+    left: 0;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: @desktops) {
+    top: 32px;
+    left: 160px;
   }
 }
 
 .programs__item-description {
   width: 100%;
-  margin: 22px 0 38px;
+  margin: 22px 0 23px;
 
   @media (min-width: @tablets) {
-    margin: 26px 0 0;
+    margin: 0;
+    margin-top: 24px;
+    width: 340px;
   }
-}
 
-.programs__item-link-block {
-  width: 100%;
-  font-size: 16px;
-  line-height: 16px;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-
-  @media (min-width: @tablets) {
-    margin-top: 55px;
-    font-size: 20px;
-    box-shadow: none;
+  @media (min-width: @desktops) {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 109px;
   }
 }
 
 .programs__item-link {
+  width: 100%;
   position: relative;
   display: inline-block;
-  padding: 4px 49px 4px 0;
+  padding: 21px 125px 20px 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
   color: @black;
+  text-transform: uppercase;
   text-decoration: none;
+  box-shadow: inset 0 1px @grey_d9;
 
   &::after {
     content: "";
     position: absolute;
     display: block;
-    top: 7px;
-    right: 9px;
+    top: 23px;
+    left: 101px;
     width: 24px;
     height: 12px;
     background-image: url("../img/icon-programs-right-arrow.svg");
     background-repeat: no-repeat;
     background-size: 32px 11px;
     background-position: right center;
-    transition: right 0.3s ease;
+    transition: right 0.3s ease, width 0.3s ease;
 
     @media (min-width: @tablets) {
-      top: 4px;
+      top: 13px;
+      left: 122px;
+    }
+
+    @media (min-width: @desktops) {
+      left: 131px;
     }
   }
 
   @media (min-width: @tablets) {
-    padding: 0 58px 0 0;
+    padding: 11px 267px 11px 0;
   }
 
   &:hover::after {
@@ -168,5 +279,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablets) {
+    margin-top: 48px;
+    font-size: 20px;
+    box-shadow: none;
+  }
+
+  @media (min-width: @desktops) {
+    margin-top: 23px;
   }
 }
