@@ -14,13 +14,14 @@
 .extra-products__layout {
   @media (min-width: @tablets) {
     padding: 0 30px;
+    max-width: @tablets;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktops) {
     display: flex;
     justify-content: space-between;
-    width: 1262px;
-    margin: 0 auto;
+    max-width: @desktops;
   }
 }
 

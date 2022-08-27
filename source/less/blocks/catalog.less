@@ -2,7 +2,7 @@
   padding-top: 29px;
 
   @media (min-width: @tablets) {
-    padding: 82px 30px 68px;
+    padding: 82px 30px 8px;
   }
 
   @media (min-width: @desktops) {
@@ -23,10 +23,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+    max-width: @tablets;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktops) {
     justify-content: flex-start;
+    max-width: @desktops;
   }
 }
 
@@ -36,6 +39,8 @@
   @media (min-width: @tablets) {
     width: calc(50% - 30px);
     min-height: 513px;
+    margin-bottom: 60px;
+    padding: 0;
 
     &:nth-child(1),
     &:nth-child(2) {

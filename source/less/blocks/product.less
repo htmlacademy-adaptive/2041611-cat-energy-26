@@ -7,15 +7,14 @@
 
   @media (min-width: @tablets) {
     flex-direction: column;
-    margin-top: 58px;
     padding: 0;
     border: 0;
     background-color: @grey_f2;
+  }
 
-    &:last-child {
-      background-image: none;
-      padding-top: 84px;
-    }
+  @media (min-width: @tablets) {
+    margin-bottom: 0;
+    padding-bottom: 40px;
   }
 }
 
@@ -136,7 +135,7 @@
 
 .product__link {
   display: inline-block;
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
   padding: 10px 22px;
   font-size: 16px;
