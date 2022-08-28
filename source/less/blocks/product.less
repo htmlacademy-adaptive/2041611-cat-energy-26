@@ -9,12 +9,9 @@
     flex-direction: column;
     padding: 0;
     border: 0;
-    background-color: @grey_f2;
-  }
-
-  @media (min-width: @tablets) {
     margin-bottom: 0;
     padding-bottom: 40px;
+    background-color: @grey_f2;
   }
 }
 
@@ -45,8 +42,12 @@
 
   @media (min-width: @tablets) {
     width: 168px;
-    height: 200px;
+    height: auto;
     margin: 0;
+  }
+
+  @media (min-width: @desktops) {
+    width: 172px;
   }
 }
 
