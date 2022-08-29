@@ -32,8 +32,12 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 160px 38px 40px;
+    padding: 174px 38px 40px;
     box-shadow: 0 0 0 1px rgba(@grey_cd, 0.5);
+  }
+
+  @media (min-width: @desktops) {
+    padding-top: 188px;
   }
 }
 
@@ -53,7 +57,8 @@
   @media (min-width: @tablets) {
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 23px;
+    max-width: 134px;
+    margin: 0 auto 23px;
   }
 }
 

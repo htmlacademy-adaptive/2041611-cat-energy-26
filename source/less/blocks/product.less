@@ -7,11 +7,16 @@
 
   @media (min-width: @tablets) {
     flex-direction: column;
+    width: 324px;
     padding: 0;
     border: 0;
     margin-bottom: 0;
     padding-bottom: 40px;
     background-color: @grey_f2;
+  }
+
+  @media (min-width: @desktops) {
+    width: 245px;
   }
 }
 
@@ -23,7 +28,7 @@
   height: 112px;
 
   @media (min-width: @tablets) {
-    margin-top: -82px;
+    margin-top: -66px;
     width: 324px;
     height: 200px;
     display: flex;
@@ -62,10 +67,11 @@
   color: @grey_11;
 
   @media (min-width: @tablets) {
-    max-width: 169px;
-    margin: 0 auto 18px;
+    max-width: 174px;
+    margin: 0 auto 21px;
+    padding: 0 10px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
     text-align: center;
   }
 }
@@ -111,6 +117,7 @@
 
   @media (min-width: @tablets) {
     font-size: 16px;
+    margin-bottom: 0;
   }
 }
 

@@ -25,7 +25,6 @@
   color: @black;
 
   @media (min-width: @tablets) {
-    margin: 0;
     padding: 0 70px 66px;
     font-size: 20px;
     line-height: 30px;
@@ -33,16 +32,15 @@
   }
 
   @media (min-width: @desktops) {
-    margin: 56px auto 66px;
-    padding: 0 40px;
+    padding-left: 110px;
+    padding-right: 110px;
     max-width: @desktops;
+    margin: 0 auto;
   }
 }
 
 .program-form__text-block {
-  @media (min-width: @desktops) {
-    display: block;
-  }
+  display: block;
 }
 
 .program-form__block {
@@ -171,8 +169,8 @@
   }
 
   @media (min-width: @desktops) {
-    max-width: 1300px;
-    padding: 0 40px;
+    max-width: @desktops;
+    padding: 0 110px;
     margin: 0 auto;
   }
 }
@@ -421,7 +419,9 @@
 }
 
 .program-form__checkbox:checked ~ .program-form__label::before {
-  background: url("../img/icon-tick.svg") no-repeat center;
+  background-image: url("../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-clip: content-box;
 }
 
@@ -447,9 +447,9 @@
   }
 
   @media (min-width: @desktops) {
-    max-width: 1300px;
+    max-width: @desktops;
     margin: 61px auto 0;
-    padding: 0 40px;
+    padding: 0 110px;
   }
 }
 
