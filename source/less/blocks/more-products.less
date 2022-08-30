@@ -9,7 +9,8 @@
     position: absolute;
     display: block;
     top: 16px;
-    left: 45%;
+    left: 50%;
+    margin-left: -15px;
     width: 30px;
     height: 30px;
     background-image: url("../img/icon-plus-mobile.svg");
@@ -21,12 +22,9 @@
       top: 54px;
       width: 60px;
       height: 60px;
-      left: 131px;
+      left: 50%;
+      margin-left: -30px;
       background-image: url("../img/icon-plus.svg");
-    }
-
-    @media (min-width: @desktops) {
-      left: 90px;
     }
   }
 
@@ -34,8 +32,12 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 160px 38px 40px;
+    padding: 174px 38px 40px;
     box-shadow: 0 0 0 1px rgba(@grey_cd, 0.5);
+  }
+
+  @media (min-width: @desktops) {
+    padding-top: 188px;
   }
 }
 
@@ -55,7 +57,8 @@
   @media (min-width: @tablets) {
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 23px;
+    max-width: 134px;
+    margin: 0 auto 23px;
   }
 }
 
