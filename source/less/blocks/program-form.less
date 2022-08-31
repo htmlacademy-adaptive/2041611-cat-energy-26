@@ -16,7 +16,7 @@
 .program-form__text {
   margin: 0;
   padding: 0 0 19px 20px;
-  max-width: 460px;
+  width: 460px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -28,13 +28,12 @@
     padding: 0 70px 66px;
     font-size: 20px;
     line-height: 30px;
-    max-width: @tablets;
+    width: @tablets;
   }
 
   @media (min-width: @desktops) {
-    padding-left: 110px;
-    padding-right: 110px;
-    max-width: @desktops;
+    width: 1220px;
+    padding-left: 0;
     margin: 0 auto;
   }
 }
@@ -169,8 +168,8 @@
   }
 
   @media (min-width: @desktops) {
-    max-width: @desktops;
-    padding: 0 110px;
+    width: 1220px;
+    padding: 0;
     margin: 0 auto;
   }
 }
@@ -447,9 +446,10 @@
   }
 
   @media (min-width: @desktops) {
-    max-width: @desktops;
-    margin: 61px auto 0;
-    padding: 0 110px;
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 61px;
+    padding: 0;
   }
 }
 
