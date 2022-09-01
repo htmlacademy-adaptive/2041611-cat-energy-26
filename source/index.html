@@ -29,8 +29,8 @@
         <img class="main-header__logo-img" src="img/logo-mobile-title.svg" width="101" height="18" alt="Cat Energy">
       </a>
     </div>
-    <nav class="main-nav main-nav--opened main-nav--nojs main-nav--index">
-      <button class="main-nav__toggle" type="button" aria-hidden="true" focusable="false">
+    <nav class="main-nav main-nav--closed main-nav--index main-nav--nojs">
+      <button class="main-nav__toggle main-nav__toggle--hidden" type="button" aria-hidden="true" focusable="false">
         <span class="visually-hidden">Меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -146,27 +146,31 @@
       <div class="toggle">
         <div class="toggle__items">
           <div class="toggle__item toggle__item--before">
-            <img class="toggle__img" src="img/before-cat-mobile@1x.png" alt="До">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-cat-desktop@1x.webp 1x, img/before-cat-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-cat-desktop@1x.webp 1x, img/before-cat-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-cat-mobile@1x.webp 1x, img/before-cat-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/before-cat-desktop@1x.png 1x, img/before-cat-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-cat-desktop@1x.png 1x, img/before-cat-desktop@2x.png 2x">
+              <img class="toggle__img" src="img/before-cat-mobile@1x.png" width="280" height="256" srcset="img/before-cat-mobile@2x.png 2x" alt="Кот до">
+            </picture>
           </div>
           <div class="toggle__item toggle__item--after">
-            <img class="toggle__img" src="img/after-cat-mobile@1x.png" alt="После">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-cat-desktop@1x.webp 1x, img/after-cat-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-cat-desktop@1x.webp 1x, img/after-cat-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-cat-mobile@1x.webp 1x, img/after-cat-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/after-cat-desktop@1x.png 1x, img/after-cat-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-cat-desktop@1x.png 1x, img/after-cat-desktop@2x.png 2x">
+              <img class="toggle__img" src="img/after-cat-mobile@1x.png" width="280" height="256" srcset="img/after-cat-mobile@2x.png 2x" alt="Кот после">
+            </picture>
           </div>
         </div>
-
-        <div class="toggle__control">
-          <button class="toggle__button toggle__button--before" type="button">Было</button>
-          <div class="toggle__range">
-            <div class="toggle__scale"></div>
-            <button class="toggle__button" type="button">До/После</button>
-          </div>
-          <button class="toggle__button toggle__button--after" type="button">Стало</button>
-        </div>
-      </div>
     </section>
 
     <section class="contacts contacts--index">
       <h2 class="visually-hidden">Контактные данные</h2>
-      <div class="contacts__layout">
+      <div class="contacts__layout contacts__layout--index">
         <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span> </address>
       </div>

@@ -1,26 +1,23 @@
 .contacts {
   position: relative;
+}
+
+.contacts,
+.contacts__layout {
   background-color: @grey_f2;
 
   &--index {
-    background-color: @white;
-
-    @media (min-width: @desktops) {
-      background-color: transparent;
-    }
+    background-color: transparent;
   }
 }
 
 .contacts__layout {
   display: flex;
   padding: 26px 20px;
-  background-color: @white;
-
 
   @media (min-width: @tablets) {
-    padding: 56px 30px;
+    padding: 56px 70px;
     justify-content: space-between;
-    background-color: @grey_f2;
     width: @tablets;
     margin: 0 auto;
   }
@@ -33,6 +30,7 @@
     top: 95px;
     left: 40px;
     z-index: 1;
+    background-color: @white;
   }
 }
 

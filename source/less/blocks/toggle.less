@@ -1,7 +1,27 @@
 .toggle {
-  @media (min-width: @desktops) {
-    width: 591px;
-    padding-bottom: 67px;
-    background-color: transparent;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle__items {
+  position: relative;
+  width: 100%;
+}
+
+.toggle__item {
+  width: 50%;
+}
+
+.toggle__item--after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 4px solid @grey_66;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.toggle__img {
+  min-height: 256px;
 }
