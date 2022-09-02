@@ -25,7 +25,11 @@
 
 .title + .catalog {
   @media (min-width: @tablets) {
-    margin-top: 68px;
+    margin-top: 52px;
+  }
+
+  @media (min-width: @desktops) {
+    margin-top: 0;
   }
 }
 
@@ -33,14 +37,13 @@
 .title-container {
   @media (min-width: @tablets) {
     padding-left: 70px;
-    width: auto;
-    margin: 0;
+    width: @tablets;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktops) {
     padding-left: 0;
     padding-bottom: 56px;
     width: 1220px;
-    margin: 0 auto;
   }
 }

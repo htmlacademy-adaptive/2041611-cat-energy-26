@@ -2,7 +2,7 @@
   padding-top: 29px;
 
   @media (min-width: @tablets) {
-    padding: 82px 30px 8px;
+    padding: 82px 30px 0;
   }
 
   @media (min-width: @desktops) {
@@ -32,17 +32,19 @@
 }
 
 .catalog__item {
-  padding: 10px 0 23px;
+  padding: 10px 0 11px;
+  border: 1px solid @grey_ed;
 
   @media (min-width: @tablets) {
     width: calc(50% - 30px);
     min-height: 513px;
     margin-bottom: 60px;
     padding: 0;
+    border: none;
 
-    &:nth-child(1),
-    &:nth-child(2) {
-      margin-top: 0;
+    &:nth-child(7),
+    &:nth-child(8) {
+      margin-bottom: 8px;
     }
   }
 
@@ -51,11 +53,6 @@
     min-height: 511px;
     margin-top: 60px;
     margin-right: 80px;
-
-    &:nth-child(3),
-    &:nth-child(4) {
-      margin-top: 0;
-    }
 
     &:nth-child(4n) {
       margin-right: 0;

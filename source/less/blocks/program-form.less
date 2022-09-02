@@ -28,12 +28,12 @@
     font-size: 20px;
     line-height: 30px;
     width: @tablets;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktops) {
     width: 1220px;
     padding-left: 0;
-    margin: 0 auto;
   }
 }
 
@@ -163,13 +163,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: @tablets;
+    margin: 0 auto;
     padding: 0 70px;
   }
 
   @media (min-width: @desktops) {
     width: 1220px;
     padding: 0;
-    margin: 0 auto;
   }
 }
 
@@ -375,13 +376,13 @@
   }
 
   @media (min-width: @tablets) {
-    margin: 0 70px;
+    width: @tablets;
+    margin: 0 auto;
     padding: 10px 19px;
   }
 
   @media (min-width: @desktops) {
     width: 1220px;
-    margin: 0 auto;
   }
 }
 
@@ -440,13 +441,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 22px;
+    margin: 22px auto 0;
     padding: 0 70px;
+    width: @tablets;
   }
 
   @media (min-width: @desktops) {
     width: 1220px;
-    margin: 0 auto;
     margin-top: 61px;
     padding: 0;
   }
