@@ -10,7 +10,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-//import del from 'del';
+import del from 'del';
 import browser from 'browser-sync';
 
 
@@ -31,7 +31,7 @@ export const styles = () => {
 
 // HTML
 
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
@@ -82,7 +82,7 @@ const sprite = () => {
     inlineSvg: true
   }))
   .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
 }
 
 // Copy

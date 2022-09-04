@@ -1,7 +1,5 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
-let sliderToggle = document.querySelector(".toggle");
-let toggleAfter = document.querySelector(".toggle__after");
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -14,10 +12,3 @@ if (navToggle) {
     navMain.classList.toggle("main-nav--closed");
   })
 };
-
-function toggle () {
-  sliderToggle.addEventListener('mousemove', (event) => {
-    let x = event.offsetX;
-    toggleAfter.style.width = x + 'px';
-  });
-}

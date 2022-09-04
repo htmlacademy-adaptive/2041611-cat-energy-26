@@ -92,7 +92,7 @@
 
     <section class="features container">
       <h2 class="visually-hidden">Особенности</h2>
-      <h3 class="features__title">Как это работает</h2>
+      <h3 class="features__title">Как это работает</h3>
         <ul class="features__items">
           <li class="features__item features__item--health">
             <p class="features__item-description">
@@ -144,26 +144,16 @@
       </div>
 
       <div class="toggle">
-        <div class="toggle__before">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-cat-desktop@1x.webp 1x, img/before-cat-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-cat-desktop@1x.webp 1x, img/before-cat-desktop@2x.webp 2x">
-            <source type="image/webp" srcset="img/before-cat-mobile@1x.webp 1x, img/before-cat-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/before-cat-desktop@1x.png 1x, img/before-cat-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-cat-desktop@1x.png 1x, img/before-cat-desktop@2x.png 2x">
-            <img class="toggle__img" src="img/before-cat-mobile@1x.png" width="280" height="256" srcset="img/before-cat-mobile@2x.png 2x" alt="Кот до">
-          </picture>
+        <div class="toggle__items">
+          <div class="toggle__item toggle__item--before"></div>
+          <div class="toggle__item toggle__item--after"></div>
+          <div class="toggle__switch">
+            <svg class="toggle__switch-icon" width="24" height="18">
+              <use href="img/sprite.svg#thumb"></use>
+            </svg>
+          </div>
         </div>
-        <div class="toggle__after">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-cat-desktop@1x.webp 1x, img/after-cat-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/after-cat-desktop@1x.webp 1x, img/after-cat-desktop@2x.webp 2x">
-            <source type="image/webp" srcset="img/after-cat-mobile@1x.webp 1x, img/after-cat-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/after-cat-desktop@1x.png 1x, img/after-cat-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/after-cat-desktop@1x.png 1x, img/after-cat-desktop@2x.png 2x">
-            <img class="toggle__img" src="img/after-cat-mobile@1x.png" width="280" height="256" srcset="img/after-cat-mobile@2x.png 2x" alt="Кот после">
-          </picture>
-        </div>
+      </div>
     </section>
 
     <section class="contacts contacts--index">
