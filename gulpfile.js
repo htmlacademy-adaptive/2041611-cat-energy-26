@@ -75,7 +75,7 @@ const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src('source/img/sprites/*.svg')
   .pipe(svgo())
   .pipe(svgstore({

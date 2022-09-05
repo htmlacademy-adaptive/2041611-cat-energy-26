@@ -27,7 +27,7 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "npx gulp"
+    "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",
@@ -49,7 +49,6 @@
   },
   "type": "module",
   "dependencies": {
-    "normalize.css": "^8.0.1",
-    "uninstall": "^0.0.0"
+    "normalize.css": "^8.0.1"
   }
 }

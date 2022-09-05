@@ -6,7 +6,7 @@
   }
 
   @media (min-width: @desktops) {
-    width: 66%;
+    width: 65%;
   }
 }
 
@@ -45,13 +45,11 @@
   height: 50px;
 }
 
-.social__item-link:hover .social__item-icon,
-.social__item-link:focus .social__item-icon {
-  path {
-    fill: @green_68;
-  }
+.social__item-link:hover svg,
+.social__item-link:focus svg {
+  fill: @green_68;
 }
 
-.social__item-icon:active {
+.social__item-link:active {
   fill-opacity: 0.3;
 }
