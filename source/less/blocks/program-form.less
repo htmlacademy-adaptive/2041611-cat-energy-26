@@ -15,8 +15,7 @@
 
 .program-form__text {
   margin: 0;
-  padding: 0 0 19px 20px;
-  width: 460px;
+  padding: 0 20px 19px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -29,12 +28,12 @@
     font-size: 20px;
     line-height: 30px;
     width: @tablets;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktops) {
     width: 1220px;
     padding-left: 0;
-    margin: 0 auto;
   }
 }
 
@@ -164,13 +163,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: @tablets;
+    margin: 0 auto;
     padding: 0 70px;
   }
 
   @media (min-width: @desktops) {
     width: 1220px;
     padding: 0;
-    margin: 0 auto;
   }
 }
 
@@ -271,6 +271,14 @@
       right: 16px;
     }
   }
+}
+
+.program-form__field-wrapper--email:focus-within svg {
+  stroke: @green_68;
+}
+
+.program-form__field-wrapper--phone:focus-within svg {
+  fill: @green_68;
 }
 
 .program-form__field-wrapper + .program-form__field-wrapper {
@@ -376,13 +384,13 @@
   }
 
   @media (min-width: @tablets) {
-    margin: 0 70px;
+    width: @tablets;
+    margin: 0 auto;
     padding: 10px 19px;
   }
 
   @media (min-width: @desktops) {
     width: 1220px;
-    margin: 0 auto;
   }
 }
 
@@ -441,13 +449,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 22px;
+    margin: 22px auto 0;
     padding: 0 70px;
+    width: @tablets;
   }
 
   @media (min-width: @desktops) {
     width: 1220px;
-    margin: 0 auto;
     margin-top: 61px;
     padding: 0;
   }

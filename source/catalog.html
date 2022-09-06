@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Каталог продукции Cat Energy</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -30,8 +30,8 @@
         <img class="main-header__logo-img" src="img/logo-mobile-title.svg" width="101" height="18" alt="Cat Energy">
       </a>
     </div>
-    <nav class="main-nav main-nav--opened main-nav--nojs">
-      <button class="main-nav__toggle main-nav__toggle" type="button" aria-hidden="true" focusable="false">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle main-nav__toggle--hidden" type="button" aria-hidden="true" focusable="false">
         <span class="visually-hidden">Меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -353,8 +353,8 @@
             <h3 class="promo__title">Закажите все и&nbsp;получите чехол для кота в подарок!</h3>
           </a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контактные данные</h2>
@@ -384,24 +384,24 @@
           <li class="social__item">
             <a class="social__item-link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Сайт HTML Academy ВКонтакте">
               <span class="visually-hidden">ВКонтакте</span>
-              <svg class="social__item-icon social__item-icon--vk" width="28" height="22">
-                <use href="img/sprite.svg#icon-vk"></use>
+              <svg class="social__item-icon social__item-icon--vk" width="28" height="22" fill="#666666">
+                <use href="img/sprite.svg#vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__item-link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Ютуб канал HTML Academy">
               <span class="visually-hidden">Ютуб</span>
-              <svg class="social__item-icon social__item-icon--youtube" width="28" height="22">
-                <use href="img/sprite.svg#icon-youtube"></use>
+              <svg class="social__item-icon social__item-icon--youtube" width="28" height="22" fill="#666666">
+                <use href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__item-link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Сайт HTML Academy в Телеграме">
               <span class="visually-hidden">Телеграм</span>
-              <svg class="social__item-icon social__item-icon--telegram" width="28" height="22">
-                <use href="img/sprite.svg#icon-telegram"></use>
+              <svg class="social__item-icon social__item-icon--telegram" width="28" height="22" fill="#666666">
+                <use href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
@@ -410,8 +410,8 @@
         <div class="main-footer__copyright-block">
           <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Academy">
             <span class="main-footer__copyright-author">HTML Academy</span>
-            <svg class="main-footer__copyright-icon" width="27" height="34">
-              <use href="img/sprite.svg#icon-html_academy"></use>
+            <svg class="main-footer__copyright-icon" width="27" height="34" fill="#666666">
+              <use href="img/sprite.svg#html-academy"></use>
             </svg>
           </a>
         </div>

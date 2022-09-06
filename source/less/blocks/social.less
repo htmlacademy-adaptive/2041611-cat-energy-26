@@ -6,12 +6,12 @@
   }
 
   @media (min-width: @desktops) {
-    width: 66%;
+    width: 65%;
   }
 }
 
 .social__items {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -21,7 +21,9 @@
   list-style: none;
 
   @media (min-width: @tablets) {
+    margin: 0;
     border: 0;
+    width: 150px;
   }
 }
 
@@ -43,15 +45,11 @@
   height: 50px;
 }
 
-.social__item-link:hover .social__item-icon,
-.social__item-link:focus .social__item-icon {
+.social__item-link:hover svg,
+.social__item-link:focus svg {
   fill: @green_68;
 }
 
-.social__item-link:active .social__item-icon {
+.social__item-link:active {
   fill-opacity: 0.3;
-}
-
-.social__item-icon {
-  fill: @grey_66;
 }

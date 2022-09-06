@@ -17,6 +17,7 @@
 
   @media (min-width: @tablets) {
     display: flex;
+    flex-wrap: wrap;
     width: 440px;
   }
 
@@ -35,7 +36,7 @@
     margin-right: 34px;
   }
 
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 }
@@ -115,6 +116,10 @@
   }
 
   @media (min-width: @tablets) {
+    display: none;
+  }
+
+  &--hidden {
     display: none;
   }
 }
