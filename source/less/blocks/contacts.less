@@ -29,7 +29,7 @@
     padding: 59px 80px;
     top: 95px;
     left: 50%;
-    margin-left: -666px;
+    margin-left: -610px;
     z-index: 1;
     background-color: @white;
   }
@@ -86,36 +86,37 @@
     content: "";
     position: absolute;
     display: block;
-    bottom: 170px;
+    width: 320px;
+    height: 362px;
     left: 50%;
-    width: 57px;
-    height: 53px;
-    margin-left: -34px;
-    background-image: url("../img/map-pin-mobile@1x.png");
+    transform: translateX(-50%);
+    background-image: url("../img/bg-map-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
-    z-index: 1;
 
     @media (min-width: @tablets) {
-      bottom: 169px;
-      width: 113px;
-      height: 106px;
-      margin-left: -79px;
-      background-image: url("../img/map-pin-desktop@1x.png");
+      width: 768px;
+      height: 400px;
+      background-image: url("../img/bg-map-tablet@1x.png");
     }
 
     @media (min-width: @desktops) {
-      top: 125px;
+      width: 1440px;
+      background-image: url("../img/bg-map-desktop@1x.png");
     }
 
     @media (min-resolution: @retina-dppx) {
       @media (min-width: @phones) {
-        background-image: url("../img/map-pin-mobile@2x.png");
+        background-image: url("../img/bg-map-mobile@2x.png");
       }
 
       @media (min-width: @tablets) {
-        background-image: url("../img/map-pin-desktop@2x.png");
+        background-image: url("../img/bg-map-tablet@2x.png");
+      }
+
+      @media (min-width: @desktops) {
+        background-image: url("../img/bg-map-desktop@2x.png");
       }
     }
   }

@@ -34,14 +34,12 @@
 
 .example__block {
   @media (min-width: @tablets) {
-    display: flex;
-    flex-direction: column;
     width: @tablets;
     margin: 0 auto;
   }
 
   @media (min-width: @desktops) {
-    flex-direction: row;
+    display: flex;
     width: 1220px;
   }
 }
