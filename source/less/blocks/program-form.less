@@ -178,6 +178,12 @@
 .program-form__block-layout {
   padding: 0 20px;
 
+  &--cat-info {
+    @media (max-width: @phones-max) {
+      padding: 0;
+    }
+  }
+
   @media (min-width: @tablets) {
     display: flex;
     flex-wrap: wrap;
@@ -189,12 +195,6 @@
 
   @media (min-width: @desktops) {
     width: 1220px;
-    padding: 0;
-  }
-}
-
-.program-form__block--cat-info {
-  @media (max-width: @phones-max) {
     padding: 0;
   }
 }
@@ -283,6 +283,11 @@
 .program-form__text-input--email,
 .program-form__text-input--tel {
   padding: 12px 9px 14px 15px;
+
+  &--error {
+    fill: @coral_ff;
+    stroke: @coral_ff;
+  }
 }
 
 .program-form__text-input--email {
@@ -307,14 +312,6 @@
 
   @media (min-width: @desktops) {
     width: calc(50% - 38px);
-  }
-}
-
-.program-form__field-wrapper--email svg,
-.program-form__field-wrapper--phone svg {
-  &--error {
-    fill: @coral_ff;
-    stroke: @coral_ff;
   }
 }
 
