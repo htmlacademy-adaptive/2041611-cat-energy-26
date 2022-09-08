@@ -11,13 +11,13 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 41%;
+      height: 43%;
       background-color: @grey_ea;
       z-index: 0;
     }
 
     @media (min-width: @desktops) {
-      height: 78%;
+      height: 77%;
     }
   }
 
@@ -46,14 +46,14 @@
 
 .example__layout {
   @media (min-width: @tablets) {
-    padding: 43px 30px 99px;
+    padding: 43px 30px 73px;
     width: @tablets;
     margin: 0 auto;
   }
 
   @media (min-width: @desktops) {
     padding: 0;
-    width: 436px;
+    width: 660px;
     z-index: 1;
   }
 }
@@ -94,7 +94,7 @@
 
   @media (min-width: @desktops) {
     margin: 0;
-    padding: 70px 0 69px;
+    padding: 73px 0 67px;
     width: 436px;
   }
 }
@@ -114,7 +114,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 
   @media (min-width: @tablets) {
     width: 390px;
@@ -122,7 +122,7 @@
 
   @media (min-width: @desktops) {
     width: 366px;
-    margin-bottom: 36px;
+    margin-bottom: 38px;
   }
 }
 
@@ -137,7 +137,7 @@
 
 .example__stats-value {
   margin: 0;
-  padding: 15px 20px;
+  padding: 13px 20px 17px;
   font-size: 24px;
   line-height: 24px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -159,12 +159,12 @@
 
 .example__stats-description {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 19px;
   padding: 0 15px;
   font-size: 12px;
   line-height: 12px;
   background-color: @grey_ea;
-  transform: translateY(-9px);
+  transform: translate(-1px, -10px);
 
   @media (min-width: @tablets) {
     margin-left: 7px;
@@ -173,7 +173,7 @@
     font-size: 14px;
     line-height: 14px;
     background-color: @white;
-    transform: translateY(-12px);
+    transform: translateY(-13px);
   }
 
   @media (min-width: @desktops) {
@@ -222,7 +222,7 @@
 
 .example__costs-description {
   @media (min-width: @tablets) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 
   @media (min-width: @desktops) {
@@ -233,6 +233,8 @@
 }
 
 .example__costs-value {
+  margin-left: 3px;
+
   @media (min-width: @desktops) {
     width: calc(50% - 21px);
     text-align: center;

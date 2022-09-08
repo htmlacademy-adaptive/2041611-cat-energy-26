@@ -7,7 +7,7 @@
 
   @media (min-width: @tablets) {
     min-height: 840px;
-    padding: 62px 0 533px 87px;
+    padding: 67px 0 533px 88px;
     color: @grey_11;
     text-align: inherit;
     width: @tablets;
@@ -47,7 +47,7 @@
       background-position: right bottom;
       background-size: cover;
       width: 50%;
-      height: 694px;
+      height: 696px;
       top: -112px;
       left: 50%;
     }
@@ -86,7 +86,7 @@
       display: block;
       width: 50%;
       height: 694px;
-      top: -112px;
+      top: -109px;
       left: 50%;
       z-index: 0;
     }
@@ -123,13 +123,12 @@
   }
 
   @media (min-width: @desktops) {
-    padding-top: 114px;
+    padding-top: 117px;
   }
 }
 
 .intro__description {
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 0 3px 29px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -158,8 +157,8 @@
   @media (min-width: @tablets) {
     position: absolute;
     left: 50%;
-    margin-left: -360px;
-    bottom: 0;
+    margin-left: -355px;
+    bottom: 7px;
     width: 709px;
     height: 609px;
     z-index: -1;
@@ -168,7 +167,7 @@
   @media (min-width: @desktops) {
     width: 552px;
     height: 499px;
-    top: 32px;
+    top: 35px;
     left: 50%;
     margin-left: -163px;
     bottom: 96px;
@@ -197,5 +196,13 @@
 
   @media (min-width: @desktops) {
     margin-left: 0;
+  }
+
+  &:hover {
+    background-color: @green_5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
