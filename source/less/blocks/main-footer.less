@@ -9,7 +9,7 @@
 
   @media (min-width: @tablets) {
     display: flex;
-    padding: 49px 0;
+    padding: 47px 31px;
     width: @tablets;
     margin: 0 auto;
   }
@@ -23,7 +23,7 @@
 
 .main-footer__logo-block {
   text-align: center;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
 
   @media (min-width: @tablets) {
     width: 39%;
@@ -34,6 +34,7 @@
 
   @media (min-width: @desktops) {
     width: 50%;
+    padding-top: 17px;
   }
 }
 
@@ -65,6 +66,11 @@
   line-height: 18px;
   color: @grey_44;
 
+  &:hover svg,
+  &:focus svg {
+    fill: @green_68;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -76,15 +82,14 @@
   @media (min-width: @tablets) {
     padding-top: 9px;
   }
+
+  @media (min-width: @desktops) {
+    padding-top: 13px;
+  }
 }
 
 .main-footer__copyright-author {
   @media (min-width: @tablets) {
     margin-right: 22px;
   }
-}
-
-.main-footer__copyright-link:hover svg,
-.main-footer__copyright-link:focus svg {
-  fill: @green_68;
 }
