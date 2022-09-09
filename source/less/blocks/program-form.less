@@ -4,7 +4,7 @@
 
   @media (min-width: @tablets) {
     margin-top: 0;
-    padding: 24px 0 72px;
+    padding: 23px 0 72px;
   }
 
   @media (min-width: @desktops) {
@@ -75,7 +75,7 @@
     @media (min-width: @tablets) {
       width: 630px;
       margin: 72px auto 0;
-      padding: 25px 28px;
+      padding: 25px 25px;
       border: 1px solid @grey_d9;
     }
 
@@ -103,7 +103,7 @@
     }
 
     @media (min-width: @desktops) {
-      margin-top: 70px;
+      margin-top: 68px;
     }
   }
 
@@ -122,7 +122,7 @@
     }
 
     @media (min-width: @desktops) {
-      margin-top: 66px;
+      margin-top: 67px;
     }
   }
 
@@ -135,7 +135,7 @@
     }
 
     @media (min-width: @desktops) {
-      margin-top: 68px;
+      margin-top: 67px;
     }
   }
 }
@@ -243,9 +243,7 @@
   }
 }
 
-.program-form__text-input,
-.program-form__text-input--email,
-.program-form__text-input--tel {
+.program-form__text-input {
   width: 100%;
   height: 46px;
   padding: 12px 15px 14px;
@@ -257,6 +255,29 @@
   background-color: @white;
   border: 1px solid rgba(205, 205, 205, 0.5);
 
+  @media (min-width: @tablets) {
+    height: 52px;
+    padding: 15px 19px 14px;
+  }
+
+  &--email {
+    padding: 12px 9px 14px 15px;
+
+    @media (min-width: @tablets) {
+      padding: 16px 9px 14px 21px;
+    }
+  }
+
+  &--tel {
+    @media (min-width: @tablets) {
+      padding: 17px 9px 14px 14px;
+    }
+  }
+
+  &--error {
+    border-color: @coral_ff;
+  }
+
   &::placeholder {
     color: @grey_44;
 
@@ -266,44 +287,12 @@
     }
   }
 
-  @media (min-width: @tablets) {
-    height: 52px;
-    padding: 15px 19px 14px;
-  }
-
   &:hover {
     border-color: @grey_cd;
   }
-
-  &--error {
-    border-color: @coral_ff;
-  }
 }
 
-.program-form__text-input--email,
-.program-form__text-input--tel {
-  padding: 12px 9px 14px 15px;
-
-  &--error {
-    fill: @coral_ff;
-    stroke: @coral_ff;
-  }
-}
-
-.program-form__text-input--email {
-  @media (min-width: @tablets) {
-    padding: 16px 9px 14px 21px;
-  }
-}
-
-.program-form__text-input--tel {
-  @media (min-width: @tablets) {
-    padding: 17px 9px 14px 14px;
-  }
-}
-
-.program-form__field-wrapper--email,
-.program-form__field-wrapper--phone {
+.program-form__block--contacts .program-form__field-wrapper {
   position: relative;
 
   @media (min-width: @tablets) {
@@ -312,6 +301,14 @@
 
   @media (min-width: @desktops) {
     width: calc(50% - 38px);
+  }
+
+  &--email:focus-within svg {
+    stroke: @green_68;
+  }
+
+  &--phone:focus-within svg {
+    fill: @green_68;
   }
 }
 
@@ -345,14 +342,14 @@
       right: 17px;
     }
   }
-}
 
-.program-form__field-wrapper--email:focus-within svg {
-  stroke: @green_68;
-}
+  &--error-email {
+    stroke: @coral_ff;
+  }
 
-.program-form__field-wrapper--phone:focus-within svg {
-  fill: @green_68;
+  &--error-phone {
+    fill: @coral_ff;
+  }
 }
 
 .program-form__field-wrapper + .program-form__field-wrapper {
@@ -593,7 +590,7 @@
 .program-form__caption {
   margin: 0;
   display: block;
-  margin-top: 21px;
+  margin-top: 20px;
   font-size: 14px;
   line-height: 16px;
   text-align: center;

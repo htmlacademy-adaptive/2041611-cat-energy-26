@@ -11,7 +11,7 @@
   @media (min-width: @tablets) {
     font-size: 60px;
     line-height: 60px;
-    padding: 67px 70px 30px 30px;
+    padding: 66px 70px 30px 30px;
     width: @tablets;
     margin: 0 auto;
     box-shadow: none;
@@ -21,6 +21,19 @@
     padding: 82px 0 86px;
     width: 1220px;
     margin: 0 auto;
+  }
+
+  &--container {
+    @media (min-width: @tablets) {
+      padding-left: 70px;
+      width: @tablets;
+      margin: 0 auto;
+    }
+
+    @media (min-width: @desktops) {
+      padding: 82px 0 57px;
+      width: 1220px;
+    }
   }
 }
 
@@ -32,19 +45,5 @@
 
   @media (min-width: @desktops) {
     margin-top: 0;
-  }
-}
-
-
-.title--container {
-  @media (min-width: @tablets) {
-    padding-left: 70px;
-    width: @tablets;
-    margin: 0 auto;
-  }
-
-  @media (min-width: @desktops) {
-    padding: 78px 0 56px 0;
-    width: 1220px;
   }
 }

@@ -10,7 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 86px 0 71px;
+    padding: 86px 0 70px;
     margin: 0 auto;
     width: 1220px;
   }
@@ -78,119 +78,119 @@
   @media (min-width: @desktops) {
     width: calc(50% - 40px);
   }
-}
 
-.programs__item--slim {
-  position: relative;
-  margin-bottom: 20px;
+  &--slim {
+    position: relative;
+    margin-bottom: 20px;
 
-  &::before {
-    content: "";
-    width: 35px;
-    height: 49px;
-    top: 21px;
-    left: 30px;
-    background-image: url("../img/icon-cat-slim.svg");
-    background-size: 100% auto;
-
-    @media (min-width: @tablets) {
-      position: absolute;
-      top: 74px;
-      left: 476px;
-      width: 140px;
-      height: 196px;
-    }
-
-    @media (min-width: @desktops) {
-      width: 70px;
-      height: 98px;
-      top: 42px;
-      left: 67px;
-    }
-  }
-
-  &::after {
-    @media (min-width: @tablets) {
+    &::before {
       content: "";
-      position: absolute;
-      display: block;
-      top: 85px;
-      right: 62px;
-      flex-shrink: 0;
-      width: 200px;
-      height: 200px;
-      background-color: @green_68;
-      border-radius: 50%;
+      width: 35px;
+      height: 49px;
+      top: 21px;
+      left: 30px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-size: 100% auto;
+
+      @media (min-width: @tablets) {
+        position: absolute;
+        top: 74px;
+        left: 476px;
+        width: 140px;
+        height: 196px;
+      }
+
+      @media (min-width: @desktops) {
+        width: 70px;
+        height: 98px;
+        top: 43px;
+        left: 67px;
+      }
     }
 
-    @media (min-width: @desktops) {
-      content: none;
+    &::after {
+      @media (min-width: @tablets) {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 85px;
+        right: 62px;
+        flex-shrink: 0;
+        width: 200px;
+        height: 200px;
+        background-color: @green_68;
+        border-radius: 50%;
+      }
+
+      @media (min-width: @desktops) {
+        content: none;
+      }
     }
-  }
-
-  @media (min-width: @tablets) {
-    padding: 71px 62px 53px 52px;
-    margin-bottom: 30px;
-  }
-
-  @media (min-width: @desktops) {
-    padding: 41px 51px 55px 52px;
-    margin-bottom: 0;
-  }
-}
-
-.programs__item--pro {
-  position: relative;
-
-  &::before {
-    width: 67px;
-    height: 28px;
-    top: 35px;
-    left: 13px;
-    background-image: url("../img/icon-cat-pro.svg");
-    background-size: 100% auto;
 
     @media (min-width: @tablets) {
-      position: absolute;
-      top: 134px;
-      left: 412px;
-      width: 268px;
-      height: 112px;
+      padding: 71px 62px 53px 52px;
+      margin-bottom: 30px;
     }
 
     @media (min-width: @desktops) {
-      width: 134px;
-      height: 56px;
-      top: 69px;
-      left: 33px;
+      padding: 41px 51px 55px 52px;
+      margin-bottom: 0;
     }
   }
 
-  &::after {
+  &--pro {
+    position: relative;
+
+    &::before {
+      width: 67px;
+      height: 28px;
+      top: 35px;
+      left: 13px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-size: 100% auto;
+
+      @media (min-width: @tablets) {
+        position: absolute;
+        top: 135px;
+        left: 412px;
+        width: 268px;
+        height: 112px;
+      }
+
+      @media (min-width: @desktops) {
+        width: 134px;
+        height: 56px;
+        top: 69px;
+        left: 33px;
+      }
+    }
+
+    &::after {
+      @media (min-width: @tablets) {
+        position: absolute;
+        top: 90px;
+        right: 60px;
+        content: "";
+        display: block;
+        flex-shrink: 0;
+        width: 200px;
+        height: 200px;
+        background-color: @green_68;
+        border-radius: 50%;
+      }
+
+      @media (min-width: @desktops) {
+        content: none;
+      }
+    }
+
     @media (min-width: @tablets) {
-      position: absolute;
-      top: 90px;
-      right: 60px;
-      content: "";
-      display: block;
-      flex-shrink: 0;
-      width: 200px;
-      height: 200px;
-      background-color: @green_68;
-      border-radius: 50%;
+      padding: 77px 28px 53px 52px;
     }
 
     @media (min-width: @desktops) {
-      content: none;
+      padding: 47px 61px 44px 52px;
     }
-  }
-
-  @media (min-width: @tablets) {
-    padding: 77px 28px 53px 52px;
-  }
-
-  @media (min-width: @desktops) {
-    padding: 47px 61px 44px 52px;
   }
 }
 
@@ -232,7 +232,7 @@
   @media (min-width: @desktops) {
     width: 100%;
     margin-top: 0;
-    padding-top: 109px;
+    padding-top: 112px;
   }
 }
 
@@ -270,12 +270,12 @@
     transition: right 0.3s ease, width 0.3s ease;
 
     @media (min-width: @tablets) {
-      top: 11px;
+      top: 12px;
       left: 134px;
     }
 
     @media (min-width: @desktops) {
-      top: 13px;
+      top: 12px;
       left: 130px;
     }
   }
