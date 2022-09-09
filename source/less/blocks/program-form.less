@@ -278,6 +278,14 @@
     border-color: @coral_ff;
   }
 
+  &--email.&--error ~ svg {
+    stroke: @coral_ff;
+  }
+
+  &--tel.&--error ~ svg {
+    fill: @coral_ff;
+  }
+
   &::placeholder {
     color: @grey_44;
 
@@ -341,14 +349,6 @@
     @media (min-width: @desktops) {
       right: 17px;
     }
-  }
-
-  &--error-email {
-    stroke: @coral_ff;
-  }
-
-  &--error-phone {
-    fill: @coral_ff;
   }
 }
 
