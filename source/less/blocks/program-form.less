@@ -278,14 +278,6 @@
     border-color: @coral_ff;
   }
 
-  &--email.&--error ~ svg {
-    stroke: @coral_ff;
-  }
-
-  &--tel.&--error ~ svg {
-    fill: @coral_ff;
-  }
-
   &::placeholder {
     color: @grey_44;
 
@@ -298,6 +290,14 @@
   &:hover {
     border-color: @grey_cd;
   }
+}
+
+.program-form__text-input--email.program-form__text-input--error ~ svg {
+  stroke: @coral_ff;
+}
+
+.program-form__text-input--tel.program-form__text-input--error ~ svg {
+  fill: @coral_ff;
 }
 
 .program-form__block--contacts .program-form__field-wrapper {
