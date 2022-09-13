@@ -17,7 +17,7 @@ import browser from 'browser-sync';
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
+  return gulp.src('docs/less/style.less', { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
@@ -32,7 +32,7 @@ export const styles = () => {
 // HTML
 
 const html = () => {
-  return gulp.src('source/*.html')
+  return gulp.src('docs/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
 }
@@ -40,7 +40,7 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/*.js')
+  return gulp.src('docs/js/*.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'))
 }
@@ -48,20 +48,20 @@ const scripts = () => {
 // Images
 
 const optimazeImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('docs/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('docs/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'))
 }
 
 // WebP
 
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('docs/img/**/*.{jpg,png}')
   .pipe(squoosh({
     webp: {}
   }))
@@ -71,12 +71,12 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/sprites/*.svg'])
+  gulp.src(['docs/img/*.svg', '!docs/img/sprites/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-  return gulp.src('source/img/sprites/*.svg')
+  return gulp.src('docs/img/sprites/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
     inlineSvg: true
@@ -89,11 +89,11 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{woff2,woff}',
-    'source/*.ico',
-    'source/manifest.webmanifest'
+    'docs/fonts/*.{woff2,woff}',
+    'docs/*.ico',
+    'docs/manifest.webmanifest'
   ], {
-    base: 'source'
+    base: 'docs'
   })
     .pipe(gulp.dest('build'))
   done();
@@ -129,9 +129,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('docs/less/**/*.less', gulp.series(styles));
+  gulp.watch('docs/js/script.js', gulp.series(scripts));
+  gulp.watch('docs/*.html', gulp.series(html, reload));
 }
 
 // Build
