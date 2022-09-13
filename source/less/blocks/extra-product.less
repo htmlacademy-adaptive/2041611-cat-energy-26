@@ -1,3 +1,23 @@
+
+.extra-product {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 13px 0 17px;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: @tablets) {
+    padding: 26px 36px 27px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktops) {
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
 .extra-product__title {
   width: 100%;
   margin: 0;
