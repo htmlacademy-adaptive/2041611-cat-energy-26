@@ -16,16 +16,6 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ---
 
-## Как использовать
-
-`npm install` - установка зависимостей.
-
-`npm start` - сборка проекта в режиме разработки и запуск локального сервера.
-
-`npm run build` - финальная сборка проекта.
-
----
-
 ## В проекте
 
 - Adaptive layout
@@ -37,6 +27,16 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 - Adaptive images (picture + srcset + media queries)
 - Retina images
 - GIT VCS
+
+---
+
+## Как использовать
+
+`npm install` - установка зависимостей.
+
+`npm start` - сборка проекта в режиме разработки и запуск локального сервера.
+
+`npm run build` - финальная сборка проекта.
 
 ---
 
