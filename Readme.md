@@ -16,43 +16,53 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ---
 
-### Памятка
+## В проекте
 
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/2041611-cat-energy-26) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
-
-Получится вот так:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808136-3a7ace00-a190-11e9-884f-24621e62b29a.jpg">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
+- Adaptive layout
+- Flexbox
+- BEM naming
+- LESS
+- Gulp (autoprefixer, css/js concatenation and minification, svg/images optimization, webp, svgsprite)
+- Inline svg sprite (symbol + use)
+- Adaptive images (picture + srcset + media queries)
+- Retina images
+- GIT VCS
 
 ---
 
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
+## Как использовать
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
+`npm install` - установка зависимостей.
 
-[check-image]: https://github.com/htmlacademy-adaptive/2041611-cat-energy-26/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/2041611-cat-energy-26/actions
+`npm start` - сборка проекта в режиме разработки и запуск локального сервера.
+
+`npm run build` - финальная сборка проекта.
+
+---
+
+## Структура проекта
+
+```bash
+.
+├── docs/                 # каталог публикации проекта на github
+├── build/                # каталог сборки проекта (cоздаётся автоматически)
+├── gulpfile.js/          # каталог задач для Gulp
+├── source/               # каталог для размещения исходных файлов проекта
+│   ├── css/              # каталог файлов стилей
+│   ├── fonts/            # каталог шрифтов
+│   ├── img/              # каталог растровых и векторных изображений
+│        └── favicons/    # каталог растровых и векторных изображений для выбора нужной фавиконки
+│   │    └── sprites/     # каталог векторных изображений для генерации векторного спрайта
+│   ├── js/               # каталог JS файлов
+│   └── index.html        # файл разметки страницы
+├── .editorconfig         # файл конфигурации настроек редактора
+├── .gitattributes        # файл атрибутов Git
+├── .gitignore            # файл исключений Git
+├── .stylelintrc.json     # файл конфигурации stylelint
+├── gulpfile.js           # файл описания тасков для gulp
+├── README.md             # документация проекта
+├── package-lock.json     # lock-файл npm
+├── package.json          # файл npm зависимостей и настроек проекта
+```
+
+---
