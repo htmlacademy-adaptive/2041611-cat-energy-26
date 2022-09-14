@@ -26,6 +26,20 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ---
 
+## В проекте
+
+- Adaptive layout
+- Flexbox
+- BEM naming
+- LESS
+- Gulp (autoprefixer, css/js concatenation and minification, svg/images optimization, webp, svgsprite)
+- Inline svg sprite (symbol + use)
+- Adaptive images (picture + srcset + media queries)
+- Retina images
+- GIT VCS
+
+---
+
 ## Структура проекта
 
 ```bash
@@ -50,3 +64,5 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 ├── package-lock.json     # lock-файл npm
 ├── package.json          # файл npm зависимостей и настроек проекта
 ```
+
+---
