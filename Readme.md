@@ -46,7 +46,6 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 .
 ├── docs/                 # каталог публикации проекта на github
 ├── build/                # каталог сборки проекта (cоздаётся автоматически)
-├── gulpfile.js/          # каталог задач для Gulp
 ├── source/               # каталог для размещения исходных файлов проекта
 │   ├── css/              # каталог файлов стилей
 │   ├── fonts/            # каталог шрифтов
@@ -59,7 +58,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 ├── .gitattributes        # файл атрибутов Git
 ├── .gitignore            # файл исключений Git
 ├── .stylelintrc.json     # файл конфигурации stylelint
-├── gulpfile.js           # файл описания тасков для gulp
+├── gulpfile.js           # каталог задач для Gulp
 ├── README.md             # документация проекта
 ├── package-lock.json     # lock-файл npm
 ├── package.json          # файл npm зависимостей и настроек проекта
